@@ -21,7 +21,7 @@ a { color: inherit; }
 .page-stamp {
   position: fixed;
   top: -34px;
-  right: -36px;
+  right: -20px;
   width: min(42vw, 420px);
   aspect-ratio: 1;
   pointer-events: none;
