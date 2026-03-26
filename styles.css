@@ -74,7 +74,12 @@ h1 { margin: 0; font-size: clamp(32px, 5vw, 52px); line-height: 1; }
 .theme { color: var(--text) !important; font-weight: 650; }
 details summary { cursor:pointer; color: var(--accent-2); }
 .link-row { display:flex; flex-wrap:wrap; gap:10px; }
-.link-row a, .related-card a { color: var(--accent-2); text-decoration:none; font-weight:700; }
+.link-row a, .related-card a, .card-title-link { color: var(--accent-2); text-decoration:none; font-weight:700; }
+.card-title-link { color: var(--text); }
+.card-title-link:hover, .link-row a:hover, .related-card a:hover, .chip:hover { text-decoration: underline; }
+.clickable-card { cursor: pointer; }
+.clickable-card:hover { border-color: rgba(137,183,255,.3); box-shadow: 0 20px 60px rgba(0,0,0,0.35), 0 0 0 1px rgba(137,183,255,.12) inset; }
+.clickable-card:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
 .mini-pick { padding: 14px; border:1px solid var(--border); border-radius:16px; background: rgba(255,255,255,.03); }
 .mini-pick h4 { margin:0 0 8px; font-size:16px; }
 .why-matters { color: #c8dbef !important; }

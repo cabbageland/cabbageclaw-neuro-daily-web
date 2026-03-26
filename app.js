@@ -1,4 +1,25 @@
-const SOURCE_BASE = 'https://raw.githubusercontent.com/cabbageland/cabbageclaw-neuro-daily/main/';
+const SOURCE_BASE = 'https://github.com/cabbageland/cabbageclaw-neuro-daily/blob/main/';
+
+function githubMarkdownUrl(path='') {
+  return `${SOURCE_BASE}${path}`;
+}
+
+function makeClickableCard(node, href) {
+  node.classList.add('clickable-card');
+  node.tabIndex = 0;
+  node.setAttribute('role', 'link');
+  node.addEventListener('click', (e) => {
+    if (e.target.closest('a, button, summary')) return;
+    window.open(href, '_blank', 'noreferrer');
+  });
+  node.addEventListener('keydown', (e) => {
+    if (e.target !== node) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      window.open(href, '_blank', 'noreferrer');
+    }
+  });
+}
 
 const state = {
   content: null,
@@ -81,26 +102,28 @@ function renderOverview() {
   const latest = state.content.digests[0];
   els.latestDigestDate.textContent = formatDate(latest.date);
   els.latestDigest.innerHTML = `
-    <h3>${escapeHtml(latest.title)}</h3>
+    <h3><a class="card-title-link" href="${githubMarkdownUrl(latest.path)}" target="_blank" rel="noreferrer">${escapeHtml(latest.title)}</a></h3>
     <p class="theme">${escapeHtml(latest.theme)}</p>
     <p>${escapeHtml(latest.overview)}</p>
     <details open>
       <summary>One-paragraph takeaway</summary>
       <p>${escapeHtml(latest.takeaway)}</p>
     </details>
-    <p><a class="button ghost" href="${SOURCE_BASE + latest.path}" target="_blank" rel="noreferrer">open digest markdown</a></p>
+    <p><a class="button ghost" href="${githubMarkdownUrl(latest.path)}" target="_blank" rel="noreferrer">open digest markdown</a></p>
   `;
+  makeClickableCard(els.latestDigest, githubMarkdownUrl(latest.path));
   const recent = state.content.notes.slice(0, 5);
   els.recentPicks.innerHTML = recent.map(note => `
-    <article class="mini-pick">
+    <article class="mini-pick" data-href="${githubMarkdownUrl(note.path)}">
       <div class="card-meta-row">
-        <span class="chip verdict">${escapeHtml(note.verdict || 'Unknown')}</span>
-        <span class="chip">${escapeHtml(note.venue || 'Unknown venue')}</span>
+        <a class="chip verdict" href="${githubMarkdownUrl(note.path)}" target="_blank" rel="noreferrer">${escapeHtml(note.verdict || 'Unknown')}</a>
+        <a class="chip" href="${githubMarkdownUrl(note.path)}" target="_blank" rel="noreferrer">${escapeHtml(note.venue || 'Unknown venue')}</a>
       </div>
-      <h4>${escapeHtml(note.title)}</h4>
+      <h4><a class="card-title-link" href="${githubMarkdownUrl(note.path)}" target="_blank" rel="noreferrer">${escapeHtml(note.title)}</a></h4>
       <p>${escapeHtml(short(note.whySelected || note.verdictText || note.overview, 180))}</p>
     </article>
   `).join('');
+  els.recentPicks.querySelectorAll('.mini-pick').forEach(node => makeClickableCard(node, node.dataset.href));
 }
 
 function renderDigests() {
@@ -108,13 +131,18 @@ function renderDigests() {
   els.digestList.innerHTML = '';
   for (const item of items) {
     const node = templates.digest.content.firstElementChild.cloneNode(true);
-    node.querySelector('.date').textContent = formatDate(item.date);
+    const digestHref = githubMarkdownUrl(item.path);
+    const date = node.querySelector('.date');
+    date.textContent = formatDate(item.date);
+    date.href = digestHref;
     const link = node.querySelector('.link');
-    link.href = SOURCE_BASE + item.path;
-    node.querySelector('h3').textContent = item.title;
+    link.href = digestHref;
+    const title = node.querySelector('h3');
+    title.innerHTML = `<a class="card-title-link" href="${digestHref}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>`;
     node.querySelector('.theme').textContent = item.theme;
     node.querySelector('.overview').textContent = short(item.overview, 420);
     node.querySelector('.takeaway').textContent = item.takeaway;
+    makeClickableCard(node, digestHref);
     els.digestList.appendChild(node);
   }
 }
@@ -127,16 +155,23 @@ function renderNotes() {
   els.notesList.innerHTML = '';
   for (const item of items) {
     const node = templates.note.content.firstElementChild.cloneNode(true);
-    node.querySelector('.verdict').textContent = item.verdict || 'Unknown';
-    node.querySelector('.venue').textContent = item.venue || 'Unknown venue';
-    node.querySelector('h3').textContent = item.title;
+    const noteHref = githubMarkdownUrl(item.path);
+    const verdict = node.querySelector('.verdict');
+    verdict.textContent = item.verdict || 'Unknown';
+    verdict.href = noteHref;
+    const venue = node.querySelector('.venue');
+    venue.textContent = item.venue || 'Unknown venue';
+    venue.href = noteHref;
+    const title = node.querySelector('h3');
+    title.innerHTML = `<a class="card-title-link" href="${noteHref}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>`;
     node.querySelector('.why').textContent = short(item.whySelected || item.verdictText, 220);
     node.querySelector('.overview').textContent = short(item.overview, 420);
     node.querySelector('.why-matters').textContent = item.whyItMatters ? short(item.whyItMatters, 220) : '';
     const paperLink = node.querySelector('.paper-link');
-    paperLink.href = item.link || SOURCE_BASE + item.path;
+    paperLink.href = item.link || noteHref;
     const mdLink = node.querySelector('.md-link');
-    mdLink.href = SOURCE_BASE + item.path;
+    mdLink.href = noteHref;
+    makeClickableCard(node, noteHref);
     els.notesList.appendChild(node);
   }
 }
@@ -146,9 +181,12 @@ function renderRelated() {
   els.relatedList.innerHTML = '';
   for (const item of items) {
     const node = templates.related.content.firstElementChild.cloneNode(true);
-    node.querySelector('h3').textContent = item.title;
+    const relatedHref = githubMarkdownUrl(item.path);
+    const title = node.querySelector('h3');
+    title.innerHTML = `<a class="card-title-link" href="${relatedHref}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>`;
     node.querySelector('.overview').textContent = short(item.overview, 360);
-    node.querySelector('.md-link').href = SOURCE_BASE + item.path;
+    node.querySelector('.md-link').href = relatedHref;
+    makeClickableCard(node, relatedHref);
     els.relatedList.appendChild(node);
   }
 }
