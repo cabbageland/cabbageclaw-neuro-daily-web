@@ -78,18 +78,19 @@ h1 { margin: 0; font-size: clamp(40px, 7vw, 72px); line-height: .96; letter-spac
   box-shadow: var(--shadow);
   overflow: hidden;
 }
-.hero-grid { display:grid; grid-template-columns: 1.35fr .95fr; gap: 16px; }
+.hero-grid { display:grid; grid-template-columns: 1fr; gap: 16px; }
 .headline-hero { align-items: center; gap: 22px; }
+.solo-hero .hero-main { max-width: 980px; }
 .hero-main { display: flex; flex-direction: column; align-items: flex-start; }
 .kicker { color: var(--accent); font-weight: 700; margin-bottom: 10px; }
-.hero h2 { margin:0 0 12px; font-size: clamp(36px, 5.4vw, 64px); line-height: .95; letter-spacing: -0.04em; }
+.hero h2 { margin:0 0 12px; font-size: clamp(40px, 5.8vw, 68px); line-height: .95; letter-spacing: -0.04em; }
 .hero-title-link { color: var(--text); text-decoration: none; }
 .hero-title-link:hover { text-decoration: underline; }
 .hero p { color: var(--muted); }
-.hero .big { font-size: clamp(20px, 2.2vw, 28px); line-height: 1.3; color: var(--text); max-width: 900px; margin: 0 0 18px; }
+.hero .big { font-size: clamp(22px, 2.35vw, 30px); line-height: 1.28; color: var(--text); max-width: 980px; margin: 0 0 18px; }
 .hero-picks {
   width: 100%;
-  max-width: 860px;
+  max-width: 980px;
   padding: 18px 20px;
   border-radius: 22px;
   background: rgba(8, 16, 29, 0.34);
@@ -111,7 +112,7 @@ h1 { margin: 0; font-size: clamp(40px, 7vw, 72px); line-height: .96; letter-spac
 }
 .hero-picks-list li {
   color: #eef6ff;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.35;
   font-weight: 650;
 }
@@ -123,28 +124,6 @@ h1 { margin: 0; font-size: clamp(40px, 7vw, 72px); line-height: .96; letter-spac
   font-weight: 700;
 }
 .hero-scroll:hover { text-decoration: underline; }
-.hero-art-wrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 280px;
-}
-.hero-art-glow {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(94,227,213,.22) 0%, rgba(137,183,255,.16) 40%, transparent 72%);
-  filter: blur(8px);
-}
-.hero-art {
-  position: relative;
-  width: min(100%, 320px);
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 18px 44px rgba(0,0,0,.35));
-}
 .stats { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px; margin: 16px 0; }
 .stat, .controls, .tabs, .panel, .card { background: rgba(13,27,45,.8); border:1px solid var(--border); border-radius: 20px; }
 .stat { padding:16px; }

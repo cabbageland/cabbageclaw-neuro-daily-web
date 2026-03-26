@@ -69,7 +69,7 @@ function renderHero() {
   const latest = state.content.digests[0];
   const picks = (latest.rankedTitles || []).slice(0, 4);
   els.hero.innerHTML = `
-    <div class="hero-grid headline-hero">
+    <div class="hero-grid headline-hero solo-hero">
       <div class="hero-main">
         <div class="kicker">Today’s neuro recommendations</div>
         <h2><a class="hero-title-link" href="${githubMarkdownUrl(latest.path)}" target="_blank" rel="noreferrer">${escapeHtml(latest.title)}</a></h2>
@@ -81,10 +81,6 @@ function renderHero() {
           </ol>
         </div>
         <a class="hero-scroll" href="#view-overview">↓ Scroll down for details</a>
-      </div>
-      <div class="hero-art-wrap">
-        <div class="hero-art-glow"></div>
-        <img class="hero-art" src="./assets/cabbageclaw-guide.png" alt="cabbageclaw" />
       </div>
     </div>
   `;
