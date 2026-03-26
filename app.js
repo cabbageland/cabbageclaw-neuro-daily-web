@@ -202,20 +202,38 @@ function renderAll() {
   renderRelated();
 }
 
+function setActiveView(view) {
+  state.view = view;
+  document.querySelectorAll('.tab').forEach(btn => btn.classList.toggle('active', btn.dataset.view === view));
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === `view-${view}`));
+}
+
 function setupTabs() {
   document.querySelectorAll('.tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      state.view = btn.dataset.view;
-      document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === btn));
-      document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === `view-${state.view}`));
+      setActiveView(btn.dataset.view);
     });
   });
 }
 
 async function init() {
   setupTabs();
-  els.searchInput.addEventListener('input', (e) => { state.query = e.target.value; renderDigests(); renderNotes(); renderRelated(); });
-  els.verdictFilter.addEventListener('change', (e) => { state.verdict = e.target.value; renderNotes(); });
+  els.searchInput.addEventListener('input', (e) => {
+    state.query = e.target.value;
+    if (state.query.trim()) {
+      setActiveView('notes');
+    }
+    renderDigests();
+    renderNotes();
+    renderRelated();
+  });
+  els.verdictFilter.addEventListener('change', (e) => {
+    state.verdict = e.target.value;
+    if (state.verdict) {
+      setActiveView('notes');
+    }
+    renderNotes();
+  });
   const res = await fetch('./data/content.json');
   state.content = await res.json();
   renderAll();
