@@ -1,0 +1,153 @@
+{
+  "generatedAt": "2026-03-26T18:53:35.437270+00:00",
+  "repo": "cabbageland/cabbageclaw-neuro-daily",
+  "digests": [
+    {
+      "slug": "2026-03-26",
+      "date": "2026-03-26",
+      "title": "Neuro Daily — 2026-03-26",
+      "theme": "The useful neuromodulation papers today are less about raw efficacy and more about whether the intervention logic is legible. The strongest work either (a) ties outcome prediction to an actually recorded circuit signal, (b) makes targeting variability explicit instead of pretending scalp heuristics are precise, or (c) shows a manipulable mechanism at the cell/circuit level. The weaker work still likes grand network stories assembled from normative connectomes and retrospective aggregation.",
+      "overview": "Today’s strongest hit is the BNST-NAc DBS depression paper because it combines a randomized clinical design with perioperative physiology, longitudinal tracking, and a biomarker story that is at least specific enough to attack. The precision TMS modeling paper is useful because it exposes how sloppy standard dlPFC targeting still is and gives a practical individual-network targeting workflow, though it remains a targeting/modeling paper rather than an outcome trial. The tFUS rat paper is adjacent rather than translational, but it is one of the cleaner recent mechanism papers because it links parameter regime to bidirectional circuit effects and identifies a specific cell-type contribution. A depression “common therapeutic network” paper is worth noting mainly as framing/citation material; it is ambitious and interesting, but much of the causal language outruns what secondary network mapping can really support.",
+      "takeaway": "The real pattern today is that the better papers are forcing neuromodulation to become more explicit about control variables. The BNST-DBS study says: here is the signal, here is how it predicts outcome, here is how it moves with stimulation. The TMS modeling paper says: here is why your supposed target is not reliably the same target across people. The tFUS paper says: here are the parameter regimes and neuronal populations behind opposite effects. That is the right direction. By contrast, the common-network depression paper is interesting synthesis but still too inferential to carry much mechanistic weight on its own.",
+      "mostRelevantPaper": "Prefrontal-bed nucleus of the stria terminalis physiological and neuropsychological biomarkers predict therapeutic outcomes in depression",
+      "rankedTitles": [
+        "Prefrontal-bed nucleus of the stria terminalis physiological and neuropsychological biomarkers predict therapeutic outcomes in depression",
+        "Precision Network Modeling of Transcranial Magnetic Stimulation Across Individuals Suggests Therapeutic Targets and Potential for Improvement",
+        "Cell-Type-Specific Bidirectional Modulation of the Cortico-Thalamo-Cortical Sensory Pathway by Transcranial Focused Ultrasound (tFUS)",
+        "Distinct antidepressant therapies act on a common brain network"
+      ],
+      "path": "daily_papers/2026-03-26.md"
+    },
+    {
+      "slug": "2026-03-25",
+      "date": "2026-03-25",
+      "title": "Neuro Daily — 2026-03-25",
+      "theme": "Personalized neuromodulation is slowly becoming more real: invasive mapping and adaptive control papers are starting to specify where, when, and why to stimulate instead of just reporting another average effect size. The good work is still narrow and early. The weak work still loves grandiose claims.",
+      "overview": "Today’s strongest hit is an OCD paper because it actually links target selection, symptom-linked physiology, and downstream circuit engagement in the same patient. The Parkinson adaptive DBS trial matters because it moves aDBS from short in-clinic demos toward longer at-home use, though the endpoint framing is softer than one would like. The closed-loop tACS-fMRI paper is an interesting noninvasive proof of concept, but the sample is tiny and the behavioral gain is modest. A computational paper on DSR+MPC is worth preserving as adjacent inspiration, not as evidence for deployable intervention design.",
+      "takeaway": "The useful pattern across today’s papers is that the serious work is converging on a simple requirement: if you claim precision neuromodulation, you should be able to specify a target, a state signal, and evidence that stimulation changes that signal in the predicted direction. The OCD mapping paper does this best, albeit in one patient. The Parkinson aDBS trial shows that chronic sensing-driven stimulation is operationally viable at scale, but the control logic is still relatively simple and the endpoint framing is not pristine. The tACS-fMRI study is a real proof of concept for individualized noninvasive optimization, though still far from a durable translational result. The DSR+MPC paper is most useful as a hypothesis engine for which states or regions may be controllable, not as evidence that we can already steer psychiatric state spaces cleanly.",
+      "mostRelevantPaper": "Invasive Brain Mapping Identifies Personalized Therapeutic Neuromodulation Targets for Obsessive-Compulsive Disorder",
+      "rankedTitles": [
+        "Invasive Brain Mapping Identifies Personalized Therapeutic Neuromodulation Targets for Obsessive-Compulsive Disorder",
+        "Long-Term Personalized Adaptive Deep Brain Stimulation in Parkinson Disease: A Nonrandomized Clinical Trial",
+        "Closing the loop between brain and electrical stimulation: A proof-of-concept randomized trial of real-time fMRI-guided tACS optimization",
+        "A Data-Driven Closed-Loop Control Approach to Drive Neural State Transitions for Mechanistic Insight"
+      ],
+      "path": "daily_papers/2026-03-25.md"
+    }
+  ],
+  "notes": [
+    {
+      "slug": "bnst_nac_dbs_depression_biomarkers",
+      "title": "Prefrontal-bed nucleus of the stria terminalis physiological and neuropsychological biomarkers predict therapeutic outcomes in depression",
+      "dateSurfaced": "2026-03-26",
+      "year": "2025",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/41253805/",
+      "venue": "Nature Communications",
+      "whySelected": "It is one of the cleaner recent psychiatric DBS papers because it ties depression outcomes to perioperative and longitudinal intracranial biomarkers instead of stopping at target anatomy and response rates.",
+      "verdict": "* Highly relevant",
+      "verdictText": "This is not definitive biomarker validation; the cohort is still small and refractory-depression DBS remains a hard place to generalize from. But the paper does a serious version of mechanism-aware clinical neuromodulation: randomized trial structure, invasive signal acquisition, predictive baseline physiology, longitudinal biomarker tracking, and an attempt to connect physiology to tractography and affective phenotype. That puts it above most depression DBS papers, which often gesture at circuits while mostly reporting symptoms.",
+      "overview": "The authors ran a DBS trial in treatment-refractory depression targeting the BNST/NAc region and asked whether perioperative electrophysiology could predict who benefits. They recorded resting BNST local field potentials and frontal EEG with externalized electrodes, extracted spectral and coupling features, and used correlation analyses plus ridge regression to predict 3-, 6-, and 12-month outcomes. Lower BNST theta power, lower frontal-BNST theta coherence, and stronger top-down prefrontal-to-BNST connectivity predicted better depression and quality-of-life outcomes. In a subset with repeated longitudinal recordings during the blinded crossover period, BNST theta also moved with stimulation state and momentary mood/anxiety, supporting it as more than a one-off baseline correlate.",
+      "whyItMatters": "Because it upgrades depression DBS from “stimulate an anatomically plausible place and hope” toward a more falsifiable control framework: measure circuit state, predict who benefits, and test whether stimulation changes that state.",
+      "finalDecision": "Keep and revisit. This is one of the better recent psychiatric DBS papers for people who care about explicit biomarker/control logic, though it is still far from definitive enough to canonize.",
+      "path": "paper_notes/bnst_nac_dbs_depression_biomarkers.md"
+    },
+    {
+      "slug": "precision_network_modeling_tms",
+      "title": "Precision Network Modeling of Transcranial Magnetic Stimulation Across Individuals Suggests Therapeutic Targets and Potential for Improvement",
+      "dateSurfaced": "2026-03-26",
+      "year": "2025",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/40772472/",
+      "venue": "Human Brain Mapping",
+      "whySelected": "It is a useful targeting paper because it shows that common TMS placement rules do not reliably engage the same higher-order networks across people and offers an individual-network modeling workflow instead.",
+      "verdict": "* Useful",
+      "verdictText": "This is not a clinical efficacy paper, and the title is slightly grander than the evidential reach. But the paper makes a real contribution to intervention logic: it explicitly models which networks standard and individualized dlPFC TMS targets hit in each person, and it shows that common heuristics often miss the intended network or hit mixed network territory. That matters if the field wants to stop pretending “left dlPFC” is a sufficiently precise target description.",
+      "overview": "The authors combine precision network estimation with transcranial magnetic stimulation electric-field modeling to ask what functional networks are actually stimulated by common clinical dlPFC TMS targets. They compare scalp-landmark targets such as F3/F4, sgACC-anticorrelation targets, and individually optimized coil placements in a dlPFC search space. Across participants, the same nominal target often engages different mixtures of frontoparietal, salience/cingulo-opercular, default, and other association networks. Individual optimization improves spatial selectivity and intensity for the intended network, and the authors argue this can be done from a relatively low-burden single MRI session.",
+      "whyItMatters": "Because it sharpens a core practical question: if you claim network-targeted TMS, can you show which network you are actually hitting in this person? This paper gives a better way to ask and partially answer that question.",
+      "finalDecision": "Keep as targeting infrastructure and framing. It does not prove therapeutic superiority, but it is useful ammunition against lazy “precision TMS” claims and a plausible template for better targeting workflows.",
+      "path": "paper_notes/precision_network_modeling_tms.md"
+    },
+    {
+      "slug": "tfus_bidirectional_corticothalamic_modulation",
+      "title": "Cell-Type-Specific Bidirectional Modulation of the Cortico-Thalamo-Cortical Sensory Pathway by Transcranial Focused Ultrasound (tFUS)",
+      "dateSurfaced": "2026-03-26",
+      "year": "2026",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.23.713540v1",
+      "venue": "bioRxiv",
+      "whySelected": "It is a compact recent mechanism paper showing parameter-dependent excitatory versus inhibitory tFUS effects with identified neuronal contributors rather than generic modulation language.",
+      "verdict": "* Useful",
+      "verdictText": "This is not a clinical paper and I only inspected the accessible abstract, so confidence should stay bounded. Still, the paper is worth preserving because it makes a much cleaner claim than most ultrasound neuromodulation work: different parameter regimes push the same sensory pathway in opposite directions, and the authors identify a specific cortical excitatory-cell contribution instead of hand-waving about “modulation.”",
+      "overview": "Using rats, the authors recorded sensory-evoked potentials and multi-unit activity in somatosensory cortex (S1) and posterior medial thalamus during hind-paw tactile stimulation, then applied tFUS to S1 under different ultrasound parameter regimes. Optogenetic tagging identified cortical CaMKII-positive, PV-positive, and SST-positive neurons, while thalamic units were classified as putative excitatory or inhibitory by waveform features. High-PRF/high-duty/high-pressure stimulation produced excitatory modulation of the sensory pathway, whereas lower-PRF/lower-duty/lower-pressure stimulation produced inhibitory modulation. The accessible abstract attributes both directions primarily to changes in S1 CaMKII-positive neuron activity, with corresponding downstream effects in thalamic regular-spiking units.",
+      "whyItMatters": "Because if ultrasound neuromodulation is going to be more than a bag of inconsistent claims, it needs parameter-to-circuit rules. This paper looks like a modest but real step in that direction.",
+      "finalDecision": "Keep as adjacent mechanistic reading, with the caveat that this note is abstract-based and should be upgraded only after a fuller read.",
+      "path": "paper_notes/tfus_bidirectional_corticothalamic_modulation.md"
+    },
+    {
+      "slug": "long_term_personalized_adbs_pd",
+      "title": "Long-Term Personalized Adaptive Deep Brain Stimulation in Parkinson Disease: A Nonrandomized Clinical Trial",
+      "dateSurfaced": "2026-03-25",
+      "year": "2025",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/40982287/",
+      "venue": "JAMA Neurology",
+      "whySelected": "It is one of the more important recent clinical steps toward chronic at-home adaptive DBS using implanted sensing rather than short supervised demos.",
+      "verdict": "* Highly relevant",
+      "verdictText": "This is not the cleanest causal test of adaptive control logic, but it matters because it shows that long-term aDBS can actually run in the wild, not just in a lab demo. The mechanistic sophistication is modest — mostly thresholded control around α/β-band LFP power — and the primary endpoint required post hoc revision, so this is not a victory lap. Still, as operational evidence that chronic sensing-driven DBS is clinically viable, it is important.",
+      "overview": "The ADAPT-PD multicenter pivotal trial enrolled Parkinson disease patients already stable on continuous DBS and tested two embedded adaptive DBS modes — single-threshold and dual-threshold control — driven by patient-specific local field potential activity in the α-β range sensed from implanted DBS hardware. Participants underwent setup and adjustment, then evaluation in blinded 30-day mode periods, followed by optional long-term follow-up at home for roughly 10 months. Most participants met the study’s performance goal for maintaining acceptable on-time without troublesome dyskinesia relative to continuous DBS, single-threshold aDBS reduced delivered energy versus cDBS, and serious device-related safety problems were not seen through long-term follow-up.",
+      "whyItMatters": "Because it is evidence that closed-loop DBS can leave the sandbox. Even if the control policy is simple, the study makes adaptive neuromodulation feel more like engineering and less like perpetual prototype theater.",
+      "finalDecision": "Keep as core reference for practical aDBS translation. Strong on deployment relevance, moderate on mechanistic sharpness, weaker than ideal on confirmatory trial design.",
+      "path": "paper_notes/long_term_personalized_adbs_pd.md"
+    },
+    {
+      "slug": "ocd_invasive_brain_mapping_personalized_targets",
+      "title": "Invasive Brain Mapping Identifies Personalized Therapeutic Neuromodulation Targets for Obsessive-Compulsive Disorder",
+      "dateSurfaced": "2026-03-25",
+      "year": "2025",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/40166548/",
+      "venue": "medRxiv preprint; later updated in Translational Psychiatry",
+      "whySelected": "It is one of the clearest recent examples of personalized circuit therapeutics where target selection, biomarker logic, and stimulation-induced circuit modulation are all made explicit.",
+      "verdict": "* Must read",
+      "verdictText": "This is still a single-patient proof of concept, so no one should confuse it with settled evidence. But the paper does something many neuromodulation studies merely gesture at: it maps candidate sites, identifies a symptom-linked physiological signal, shows that the chosen stimulation sites suppress that signal, and then carries those sites into chronic DBS. If you care about mechanism-aware psychiatric neuromodulation, this is unusually concrete.",
+      "overview": "The authors implanted temporary stereoelectroencephalography electrodes across cortico-striato-thalamo-cortical (CSTC) regions in a patient with severe treatment-refractory OCD, then used a multi-day inpatient stimulation-mapping protocol to identify sites that acutely improved symptoms. They found two right ventral capsule targets that reduced OCD symptoms during sham-controlled testing. Intracranial recordings suggested that high-frequency activity in orbitofrontal and related CSTC regions tracked symptom severity, and stimulation at the selected ventral capsule sites suppressed orbitofrontal high-frequency activity while showing structural and electrophysiological connectivity to those cortical regions. Those personalized targets were then implanted for chronic DBS, and combined stimulation produced an early clinical improvement.",
+      "whyItMatters": "Because it is a serious example of circuit therapeutics instead of decorative personalization rhetoric. It suggests a workflow for psychiatric neuromodulation where target choice is justified by symptom-linked physiology and demonstrated engagement, not just historical habit.",
+      "finalDecision": "Preserve and revisit. This is one of the better recent exemplars of mechanism-aware psychiatric neuromodulation, but its evidential strength is still proof-of-concept rather than generalizable clinical standard.",
+      "path": "paper_notes/ocd_invasive_brain_mapping_personalized_targets.md"
+    },
+    {
+      "slug": "closed_loop_tacs_fmri_optimization",
+      "title": "Closing the loop between brain and electrical stimulation: A proof-of-concept randomized trial of real-time fMRI-guided tACS optimization",
+      "dateSurfaced": "2026-03-25",
+      "year": "2026",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.02.28.708766v1.full",
+      "venue": "bioRxiv",
+      "whySelected": "It is a relatively concrete attempt to personalize noninvasive network stimulation online using neural feedback rather than fixed tACS parameters.",
+      "verdict": "* Useful",
+      "verdictText": "This is one of the more interesting recent noninvasive closed-loop papers because it actually optimizes stimulation parameters online against a network target. But it is still a small proof-of-concept in healthy participants, the behavioral effect is modest, and the target variable is fMRI functional connectivity during a 2-back task rather than any clinically validated state. Worth watching, not worth worshipping.",
+      "overview": "The study combines concurrent high-definition dual-site tACS with real-time fMRI and a simplex optimization algorithm to adjust stimulation frequency and phase offset between right DLPFC and right inferior parietal cortex while participants perform a working-memory task. Participants were randomized into an up-regulation arm, where the algorithm searched for stimulation parameters that preserved or increased frontoparietal functional connectivity, and a down-regulation arm, where it searched for parameters that reduced connectivity. After two training runs, the optimized parameter set was applied in a test run. The groups diverged in connectivity trajectories during testing, and the up-regulation group showed better within-run accuracy improvement, with resting-state connectivity changes suggesting some persistence beyond immediate stimulation.",
+      "whyItMatters": "Because it is a better prototype of noninvasive precision stimulation than the usual fixed-frequency mush. Even if the setup is cumbersome, the paper makes the intervention logic explicit enough to critique and build on.",
+      "finalDecision": "Keep, but as an early proof-of-concept rather than a mature translational paper. Good intervention logic, weak sample strength.",
+      "path": "paper_notes/closed_loop_tacs_fmri_optimization.md"
+    },
+    {
+      "slug": "dsr_mpc_neural_state_transitions",
+      "title": "A Data-Driven Closed-Loop Control Approach to Drive Neural State Transitions for Mechanistic Insight",
+      "dateSurfaced": "2026-03-25",
+      "year": "2025",
+      "link": "https://www.biorxiv.org/content/10.1101/2025.07.21.665992v2.full",
+      "venue": "bioRxiv",
+      "whySelected": "It is a computationally serious attempt to infer controllability of affective-state transitions from learned nonlinear brain dynamics rather than static connectivity alone.",
+      "verdict": "* Useful",
+      "verdictText": "This is adjacent rather than directly actionable. The paper is most valuable as a computational framing device for how one might rank targets or estimate control difficulty in psychiatric state transitions. It is not evidence that current neuromodulation systems can reliably steer remitted depression or repetitive negative thinking in the real world.",
+      "overview": "The authors train subject-level nonlinear dynamical surrogate models on fMRI data recorded during resting and sad mood induction in participants with remitted major depressive disorder and healthy controls. They then define target state distributions using Gaussian mixture models and use model predictive control to infer region-specific control inputs that would drive transitions between affective states in silico. Their analyses suggest that some small regions such as sgACC and nucleus accumbens require less control energy, and that participants with remitted depression appear easier to push into sad mood and harder to return fully to a neutral-like state, despite similar nominal target attainment. The paper’s main contribution is a control-theoretic lens on psychiatric state dynamics, not a validated intervention recipe.",
+      "whyItMatters": "Because it offers a decent computational language for talking about neural state transitions, control energy, and target ranking without collapsing into “connectivity changed, therefore mechanism.” It is more useful as a design scaffold than as evidence.",
+      "finalDecision": "Preserve as adjacent computational inspiration. Good for theory and target-ranking ideas; not yet strong translational evidence.",
+      "path": "paper_notes/dsr_mpc_neural_state_transitions.md"
+    }
+  ],
+  "related": [
+    {
+      "slug": "closed_loop_and_personalized_targeting",
+      "title": "Closed-loop and personalized targeting",
+      "overview": "The good neuromodulation papers are converging on a stricter standard than the field used to tolerate.",
+      "path": "related_work/closed_loop_and_personalized_targeting.md"
+    }
+  ]
+}
