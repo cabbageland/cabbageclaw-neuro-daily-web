@@ -94,7 +94,7 @@ h1 { margin: 0; font-size: clamp(40px, 7vw, 72px); line-height: .96; letter-spac
 .hero-title-link { color: var(--text); text-decoration: none; }
 .hero-title-link:hover { text-decoration: underline; }
 .hero p { color: var(--muted); }
-.hero .big { font-size: clamp(22px, 2.35vw, 30px); line-height: 1.28; color: var(--text); max-width: 980px; margin: 0 0 18px; }
+.hero .big { font-size: clamp(17px, 1.65vw, 21px); line-height: 1.42; color: var(--text); max-width: 980px; margin: 0 0 18px; }
 .hero-picks {
   width: 100%;
   max-width: 980px;
@@ -210,7 +210,7 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   h1 { font-size: clamp(34px, 11vw, 54px); }
   .hero { padding: 22px; }
   .hero h2 { font-size: clamp(34px, 9vw, 48px); }
-  .hero .big { font-size: 19px; }
+  .hero .big { font-size: 17px; }
   .hero-picks { padding: 16px; }
   .hero-picks-list li { font-size: 18px; }
   .hero-art-wrap { min-height: 180px; }
