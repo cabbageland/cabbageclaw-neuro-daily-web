@@ -64,7 +64,7 @@ a { color: inherit; }
   background: linear-gradient(90deg, rgba(123,189,255,.95), rgba(146,161,255,.92));
   box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 8px 22px rgba(59,95,173,.24);
 }
-h1 { margin: 0; font-size: clamp(36px, 5.8vw, 68px); line-height: 1; letter-spacing: -0.05em; }
+h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spacing: -0.05em; }
 .site-title {
   display: block;
   max-width: 100%;
@@ -72,7 +72,7 @@ h1 { margin: 0; font-size: clamp(36px, 5.8vw, 68px); line-height: 1; letter-spac
 .title-gradient {
   display: inline-block;
   max-width: 100%;
-  white-space: normal;
+  white-space: nowrap;
   background: linear-gradient(90deg, #9ad8ff 0%, #8cb8ff 38%, #b5a3ff 66%, #f191d8 100%);
   -webkit-background-clip: text;
   background-clip: text;
