@@ -67,18 +67,24 @@ function formatDate(dateStr) {
 
 function renderHero() {
   const latest = state.content.digests[0];
+  const picks = (latest.rankedTitles || []).slice(0, 4);
   els.hero.innerHTML = `
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">Latest neuro digest</div>
-        <h2>${escapeHtml(latest.title)}</h2>
+    <div class="hero-grid headline-hero">
+      <div class="hero-main">
+        <div class="kicker">Today’s neuro recommendations</div>
+        <h2><a class="hero-title-link" href="${githubMarkdownUrl(latest.path)}" target="_blank" rel="noreferrer">${escapeHtml(latest.title)}</a></h2>
         <p class="big">${escapeHtml(latest.theme)}</p>
-        <p>${escapeHtml(short(latest.takeaway, 360))}</p>
+        <div class="hero-picks">
+          <div class="hero-picks-label">Recommended papers today</div>
+          <ol class="hero-picks-list">
+            ${picks.map(title => `<li>${escapeHtml(title)}</li>`).join('')}
+          </ol>
+        </div>
+        <a class="hero-scroll" href="#view-overview">↓ Scroll down for details</a>
       </div>
-      <div>
-        <div class="kicker">What this dashboard is</div>
-        <p>This is a static GitHub Pages dashboard over the neuro-daily repo: daily rankings, paper notes, and synthesis pages without a backend or a login swamp.</p>
-        <p class="muted">Meaning: easy to publish, easy to pin on a phone, and easy to extend once the repo grows teeth.</p>
+      <div class="hero-art-wrap">
+        <div class="hero-art-glow"></div>
+        <img class="hero-art" src="./assets/cabbageclaw-guide.png" alt="cabbageclaw" />
       </div>
     </div>
   `;
