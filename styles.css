@@ -71,9 +71,8 @@ h1 { margin: 0; font-size: clamp(36px, 5.8vw, 68px); line-height: 1; letter-spac
 }
 .title-gradient {
   display: inline-block;
-  max-width: min(100%, 12ch);
-  text-wrap: balance;
-  overflow-wrap: anywhere;
+  max-width: 100%;
+  white-space: normal;
   background: linear-gradient(90deg, #9ad8ff 0%, #8cb8ff 38%, #b5a3ff 66%, #f191d8 100%);
   -webkit-background-clip: text;
   background-clip: text;
