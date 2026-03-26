@@ -23,20 +23,31 @@ a { color: inherit; }
 .topbar {
   position: relative;
   display: flex; justify-content: space-between; gap: 24px; align-items: flex-start;
-  padding: 28px 32px; background: linear-gradient(180deg, rgba(32,40,59,.96), rgba(24,33,51,.9)); border: 1px solid rgba(255,255,255,0.09); border-radius: 28px; box-shadow: var(--shadow), 0 1px 0 rgba(255,255,255,.05) inset;
+  padding: 28px 32px; background: linear-gradient(180deg, rgba(32,40,59,.82), rgba(24,33,51,.72)); border: 1px solid rgba(255,255,255,0.09); border-radius: 28px; box-shadow: var(--shadow), 0 1px 0 rgba(255,255,255,.05) inset;
   overflow: hidden;
+}
+.topbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 40%, rgba(154,216,255,.1), transparent 24%),
+    radial-gradient(circle at 76% 46%, rgba(241,145,216,.08), transparent 30%);
+  pointer-events: none;
 }
 .topbar::after {
   content: "";
   position: absolute;
-  right: -10px;
-  top: -8px;
-  width: clamp(120px, 18vw, 220px);
+  right: -14px;
+  top: -12px;
+  width: clamp(170px, 24vw, 310px);
   aspect-ratio: 1;
   background: url('./assets/cabbageclaw-001-stamp-trans.png') center/contain no-repeat;
-  opacity: 0.3;
+  opacity: 0.13;
   pointer-events: none;
-  filter: drop-shadow(0 18px 40px rgba(0,0,0,.34));
+  transform: rotate(14deg);
+  transform-origin: center;
+  filter: sepia(1) hue-rotate(155deg) saturate(1.9) brightness(1.05) drop-shadow(0 18px 40px rgba(0,0,0,.22));
 }
 .topbar-copy {
   position: relative;
@@ -99,7 +110,7 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 .hero {
   margin-top: 18px;
   padding: 28px;
-  background: radial-gradient(circle at 20% 0%, rgba(128,242,214,.14), transparent 34%), linear-gradient(135deg, rgba(128,242,214,.1), rgba(137,183,255,.11), rgba(240,126,200,.08));
+  background: radial-gradient(circle at 20% 0%, rgba(128,242,214,.14), transparent 34%), linear-gradient(135deg, rgba(128,242,214,.08), rgba(137,183,255,.09), rgba(240,126,200,.06));
   border: 1px solid var(--border);
   border-radius: 28px;
   box-shadow: var(--shadow);
@@ -127,7 +138,7 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
   max-width: 980px;
   padding: 18px 20px;
   border-radius: 22px;
-  background: rgba(8, 16, 29, 0.34);
+  background: rgba(8, 16, 29, 0.22);
   border: 1px solid rgba(255,255,255,.08);
 }
 .hero-picks-label {
@@ -159,7 +170,7 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 }
 .hero-scroll:hover { text-decoration: underline; }
 .stats { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px; margin: 16px 0; }
-.stat, .controls, .tabs, .panel, .card { background: rgba(13,27,45,.8); border:1px solid var(--border); border-radius: 20px; }
+.stat, .controls, .tabs, .panel, .card { background: rgba(13,27,45,.64); border:1px solid var(--border); border-radius: 20px; }
 .stat { padding:16px; }
 .stat .label { color: var(--muted); font-size: 13px; }
 .stat .value { font-size: 28px; font-weight: 800; margin-top: 8px; }
@@ -234,10 +245,11 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   .hero-grid, .grid.two, .stats, .topbar, .controls { grid-template-columns: 1fr; flex-direction: column; }
   .topbar { padding: 22px 20px; gap: 18px; }
   .topbar::after {
-    right: -28px;
-    top: -8px;
-    width: 132px;
-    opacity: 0.24;
+    right: -18px;
+    top: -4px;
+    width: 156px;
+    opacity: 0.11;
+    transform: rotate(12deg);
   }
   .eyebrow { font-size: 11px; padding: 9px 14px; }
   h1 { font-size: clamp(34px, 11vw, 54px); }
