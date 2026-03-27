@@ -1,7 +1,24 @@
 {
-  "generatedAt": "2026-03-26T18:53:35.437270+00:00",
+  "generatedAt": "2026-03-27T14:03:53.449826+00:00",
   "repo": "cabbageland/cabbageclaw-neuro-daily",
   "digests": [
+    {
+      "slug": "2026-03-27",
+      "date": "2026-03-27",
+      "title": "Neuro Daily — 2026-03-27",
+      "theme": "Today’s useful papers are mostly about infrastructure for control and mechanism, not near-term psychiatric efficacy. The strongest computational paper makes large, biologically constrained circuit fitting much more tractable. The strongest neurotechnology paper builds an implant platform that is materially closer to ecological, bidirectional neuromodulation than the usual tethered lab rig. The taVNS cognition papers, by contrast, mostly illustrate why weak behavioral enhancement claims without physiological verification remain hard to take seriously.",
+      "overview": "The most worth-preserving paper today is Deep-learning-assisted simulation of a cortical circuit: integrating anatomy, physiology and function because it pushes mechanistic large-scale circuit modeling out of the supercomputer-and-hand-tuning era into something more reproducible and attackable. A modular, high-bandwidth, bidirectional implantable device for neural interrogation is the strongest translational hardware hit: not because it proves a therapy, but because it provides a plausible route toward chronic, bidirectional, modular sensing-and-stimulation setups that could support real closed-loop work outside toy conditions. The recent taVNS electrical-vs-ultrasound cognition papers are lower-confidence and mostly negative-to-mixed; they are worth noting as a reminder that “noninvasive vagal enhancement” remains parameter-fragile and mechanism-light in healthy volunteers.",
+      "takeaway": "The strong pattern today is that the worthwhile papers improve the machinery of inference and intervention rather than claiming premature therapeutic victory. The cortical simulation paper improves our ability to fit and interrogate biologically constrained circuits. The MBI paper improves the hardware substrate for chronic bidirectional interfacing. The taVNS studies mostly show the opposite pattern: lots of intervention language, modest behavioral signal, and weak mechanistic verification. So the honest read is that infrastructure and modeling are advancing faster than many of the flashy human neuromodulation effect claims.",
+      "mostRelevantPaper": "Deep-learning-assisted simulation of a cortical circuit: integrating anatomy, physiology and function",
+      "rankedTitles": [
+        "Deep-learning-assisted simulation of a cortical circuit: integrating anatomy, physiology and function",
+        "A modular, high-bandwidth, bidirectional implantable device for neural interrogation",
+        "Optimizing Biophysical Large-Scale Brain Circuit Models With Deep Neural Networks",
+        "Transcutaneous auricular vagus nerve stimulation for working memory enhancement: A comparative study of electrical and ultrasound stimulation",
+        "Comparing Electrical and Ultrasound Transcutaneous Vagus Nerve Stimulation (taVNS) on Associative Memory"
+      ],
+      "path": "daily_papers/2026-03-27.md"
+    },
     {
       "slug": "2026-03-26",
       "date": "2026-03-26",
@@ -36,6 +53,36 @@
     }
   ],
   "notes": [
+    {
+      "slug": "deep_learning_assisted_v1_circuit_simulation",
+      "title": "Deep-learning-assisted simulation of a cortical circuit: integrating anatomy, physiology and function",
+      "dateSurfaced": "2026-03-27",
+      "year": "2026",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.03.13.711751v1.full",
+      "venue": "bioRxiv",
+      "whySelected": "It makes large biologically constrained circuit fitting far more practical, which is exactly what mechanistic computational neuroscience keeps claiming to want.",
+      "verdict": "* Highly relevant",
+      "verdictText": "This is one of the better recent computational neuroscience papers because the deep-learning part is in service of a real bottleneck rather than branding. The contribution is not a new decoder benchmark; it is a differentiable simulator plus a large multimodal V1 model that can actually be optimized under biological constraints on commodity hardware. That does not solve identifiability or make mouse V1 automatically translational, but it materially improves the feasibility of mechanism-oriented circuit modeling.",
+      "overview": "The paper builds a roughly 67,000-neuron recurrent spiking model of mouse primary visual cortex by integrating EM connectomics, cell-type-resolved electrophysiology, multipatch synaptic physiology, and large-scale Neuropixels recordings. Instead of relying on slow manual tuning, the authors use a GPU-accelerated differentiable simulator and gradient-based optimization to fit the model to in vivo response statistics while preserving biological priors such as synaptic weight distributions and cell-type structure. The trained network reportedly generalizes beyond the narrow training stimuli to new contrasts and natural scenes, and analysis of the fitted parameters highlights structured inhibitory cohorts with outsized control over circuit activity. The main value is not that the model is the final answer; it is that the workflow makes constrained large-scale circuit fitting substantially easier to reproduce, perturb, and criticize.",
+      "whyItMatters": "Because if we care about mechanism and controllability, we need circuit models that can actually be fit, perturbed, and reused under biological constraints. This is more promising infrastructure than another opaque predictive model.",
+      "finalDecision": "Keep. Strong computational infrastructure paper with real mechanistic utility, though still more about making serious modeling possible than delivering a direct intervention result.",
+      "path": "paper_notes/deep_learning_assisted_v1_circuit_simulation.md"
+    },
+    {
+      "slug": "modular_bidirectional_implantable_interface",
+      "title": "A modular, high-bandwidth, bidirectional implantable device for neural interrogation",
+      "dateSurfaced": "2026-03-27",
+      "year": "2026",
+      "link": "https://www.biorxiv.org/content/10.64898/2026.02.23.707488v1.full",
+      "venue": "bioRxiv",
+      "whySelected": "It is one of the cleaner recent hardware papers aimed at the actual bottlenecks of chronic bidirectional neuromodulation rather than another narrow single-indication implant story.",
+      "verdict": "* Useful",
+      "verdictText": "This is a platform paper, not therapy evidence, so it should be judged as engineering infrastructure rather than clinical impact. On that standard it is solidly useful: the modular fully implantable design, bidirectional communication, and validation with a third-party spinal array all attack real practical barriers to ecological closed-loop neurotechnology. The red flag is the usual one for hardware papers — stable preclinical operation is not the same thing as durable human translational viability.",
+      "overview": "The authors describe the Modular Bionic Interface (MBI), a fully implantable system paired with a worn external unit that supports wireless power/data transfer, neural recording, and spatiotemporally patterned electrical stimulation through modular connections to third-party implanted devices. The pitch is that most current systems force bad tradeoffs: tethered rigs provide bandwidth but kill ecological use, while fully implanted systems often sacrifice channel count, modularity, or bidirectionality. The MBI is proposed as a compromise architecture that can record high-fidelity electrophysiology and deliver stimulation while remaining implantable and adaptable to different anatomical targets. The paper validates the platform on the benchtop and in a chronic sheep implantation over three months, including evoked motor responses and spinal compound action potential recordings when connected to an actively powered high-resolution spinal cord stimulation array.",
+      "whyItMatters": "Because serious neuromodulation keeps running into the same boring but decisive infrastructure problem: you need sensing, stimulation, telemetry, and modularity in one system. This paper is useful because it treats that as the main engineering problem instead of pretending clinical magic happens first.",
+      "finalDecision": "Keep as translational infrastructure. Not a mechanism paper and not efficacy evidence, but the architecture is concrete enough to matter.",
+      "path": "paper_notes/modular_bidirectional_implantable_interface.md"
+    },
     {
       "slug": "bnst_nac_dbs_depression_biomarkers",
       "title": "Prefrontal-bed nucleus of the stria terminalis physiological and neuropsychological biomarkers predict therapeutic outcomes in depression",
