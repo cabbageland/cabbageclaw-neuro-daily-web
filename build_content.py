@@ -126,6 +126,27 @@ def collect_markdown() -> dict[str, str]:
     return markdown
 
 
+def collect_audio() -> dict[str, dict[str, str]]:
+    audio = {
+        'daily_papers/2026-03-27.md': {
+            'label': 'Listen to digest',
+            'scriptPath': 'audio_scripts/2026-03-27_digest_audio_script.md',
+            'audioPath': 'audio/generated/2026-03-27_digest.wav',
+        },
+        'paper_notes/deep_learning_assisted_v1_circuit_simulation.md': {
+            'label': 'Listen to reading notes',
+            'scriptPath': 'audio_scripts/2026-03-27_reading_notes_audio_script.md',
+            'audioPath': 'audio/generated/2026-03-27_reading_notes.wav',
+        },
+        'paper_notes/modular_bidirectional_implantable_interface.md': {
+            'label': 'Listen to reading notes',
+            'scriptPath': 'audio_scripts/2026-03-27_reading_notes_audio_script.md',
+            'audioPath': 'audio/generated/2026-03-27_reading_notes.wav',
+        },
+    }
+    return audio
+
+
 def main() -> None:
     daily_dir = SOURCE_REPO / 'daily_papers'
     notes_dir = SOURCE_REPO / 'paper_notes'
@@ -153,6 +174,7 @@ def main() -> None:
         'notes': notes,
         'related': related,
         'markdown': collect_markdown(),
+        'audio': collect_audio(),
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')

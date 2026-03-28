@@ -46,7 +46,7 @@ function makeClickableCard(node, path) {
   node.setAttribute('role', 'link');
   const open = () => openDetailByPath(path);
   node.addEventListener('click', (e) => {
-    if (e.target.closest('a, button, summary')) return;
+    if (e.target.closest('a, button, summary, audio')) return;
     open();
   });
   node.addEventListener('keydown', (e) => {
@@ -83,7 +83,9 @@ const els = {
   detailMeta: document.getElementById('detailMeta'),
   detailBody: document.getElementById('detailBody'),
   detailSourceLink: document.getElementById('detailSourceLink'),
-  detailBackButton: document.getElementById('detailBackButton')
+  detailBackButton: document.getElementById('detailBackButton'),
+  detailAudioButton: document.getElementById('detailAudioButton'),
+  detailAudioPlayer: document.getElementById('detailAudioPlayer')
 };
 
 const templates = {
@@ -102,6 +104,32 @@ function detailRecord(path) {
   return { kind: 'Markdown', title: path.split('/').pop() || path, meta: '', sourcePath: path };
 }
 
+function configureAudioForPath(path) {
+  const audioInfo = state.content?.audio?.[path];
+  els.detailAudioPlayer.pause();
+  els.detailAudioPlayer.classList.add('hidden');
+  els.detailAudioPlayer.removeAttribute('src');
+  els.detailAudioPlayer.load();
+
+  if (!audioInfo) {
+    els.detailAudioButton.classList.add('hidden');
+    els.detailAudioButton.onclick = null;
+    return;
+  }
+
+  els.detailAudioButton.classList.remove('hidden');
+  els.detailAudioButton.textContent = audioInfo.label || '▶ play audio';
+  els.detailAudioButton.onclick = async () => {
+    els.detailAudioPlayer.src = `./${audioInfo.audioPath}`;
+    els.detailAudioPlayer.classList.remove('hidden');
+    try {
+      await els.detailAudioPlayer.play();
+    } catch (err) {
+      console.error('Audio playback failed', err);
+    }
+  };
+}
+
 function openDetailByPath(path) {
   if (!state.content?.markdown?.[path]) {
     window.open(githubMarkdownUrl(path), '_blank', 'noreferrer');
@@ -116,6 +144,7 @@ function openDetailByPath(path) {
   els.detailBody.innerHTML = renderMarkdown(state.content.markdown[path]);
   els.detailSourceLink.href = githubMarkdownUrl(path);
   els.detailSourceLink.textContent = 'open on GitHub';
+  configureAudioForPath(path);
   setActiveView('detail');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }

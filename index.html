@@ -61,9 +61,11 @@
             </div>
             <div class="detail-actions">
               <button class="button ghost" id="detailBackButton" type="button">← back</button>
+              <button class="button ghost hidden" id="detailAudioButton" type="button">▶ play audio</button>
               <a class="button ghost" id="detailSourceLink" target="_blank" rel="noreferrer">open on GitHub</a>
             </div>
           </div>
+          <audio id="detailAudioPlayer" class="detail-audio hidden" controls preload="none"></audio>
           <article class="markdown-body" id="detailBody"></article>
         </article>
       </section>

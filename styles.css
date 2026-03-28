@@ -18,6 +18,7 @@ body {
   background: radial-gradient(circle at top, #12314d 0%, #0b1625 38%, var(--bg) 100%);
 }
 a { color: inherit; }
+.hidden { display: none !important; }
 .reset-button {
   appearance: none;
   border: none;
@@ -304,6 +305,12 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-end;
+}
+
+.detail-audio {
+  width: min(100%, 520px);
+  margin: 0 0 22px;
+  display: block;
 }
 
 .markdown-body {
