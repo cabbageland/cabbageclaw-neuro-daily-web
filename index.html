@@ -51,6 +51,23 @@
     </section>
 
     <main>
+      <section class="view view-detail" id="view-detail">
+        <article class="panel detail-panel">
+          <div class="detail-header">
+            <div>
+              <p class="detail-kicker" id="detailKicker"></p>
+              <h2 id="detailTitle"></h2>
+              <p class="detail-meta" id="detailMeta"></p>
+            </div>
+            <div class="detail-actions">
+              <button class="button ghost" id="detailBackButton" type="button">← back</button>
+              <a class="button ghost" id="detailSourceLink" target="_blank" rel="noreferrer">open on GitHub</a>
+            </div>
+          </div>
+          <article class="markdown-body" id="detailBody"></article>
+        </article>
+      </section>
+
       <section class="view active" id="view-overview">
         <div class="stats" id="stats"></div>
         <div class="grid two">
@@ -125,6 +142,7 @@
     </article>
   </template>
 
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="./app.js" type="module"></script>
 </body>
 </html>

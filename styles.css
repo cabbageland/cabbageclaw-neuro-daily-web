@@ -18,6 +18,17 @@ body {
   background: radial-gradient(circle at top, #12314d 0%, #0b1625 38%, var(--bg) 100%);
 }
 a { color: inherit; }
+.reset-button {
+  appearance: none;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  text-align: inherit;
+  cursor: pointer;
+}
 .page-stamp {
   position: fixed;
   top: -34px;
@@ -189,6 +200,7 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 .controls select { max-width: 250px; }
 .view { display:none; }
 .view.active { display:block; }
+.view-detail.active { display:block; }
 .grid.two { display:grid; grid-template-columns: minmax(0, 1.38fr) minmax(320px, .82fr); gap:16px; }
 .panel { padding:24px; }
 .panel-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; margin-bottom: 14px; }
@@ -253,6 +265,122 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   padding: 14px 18px;
 }
 
+.detail-panel {
+  padding: 28px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.detail-kicker {
+  margin: 0 0 8px;
+  color: #a9caff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 800;
+}
+
+.detail-header h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.detail-meta {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.markdown-body {
+  max-width: 860px;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 1.5em 0 0.6em;
+}
+
+.markdown-body h1 { font-size: clamp(32px, 4.2vw, 46px); }
+.markdown-body h2 { font-size: clamp(24px, 3vw, 32px); }
+.markdown-body h3 { font-size: clamp(20px, 2.3vw, 26px); }
+.markdown-body h4 { font-size: 18px; }
+
+.markdown-body p,
+.markdown-body li {
+  color: #d8e6f5;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.markdown-body p,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body blockquote,
+.markdown-body pre,
+.markdown-body table {
+  margin: 0 0 18px;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 24px;
+}
+
+.markdown-body strong {
+  color: #ffffff;
+}
+
+.markdown-body a {
+  color: var(--accent-2);
+}
+
+.markdown-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  padding: 0.12em 0.35em;
+  border-radius: 8px;
+  background: rgba(255,255,255,.08);
+}
+
+.markdown-body pre {
+  padding: 16px;
+  border-radius: 16px;
+  overflow: auto;
+  background: rgba(4, 10, 19, .8);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.markdown-body pre code {
+  background: transparent;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  margin-left: 0;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid rgba(137,183,255,.45);
+  color: #cfe0f3;
+}
+
 @media (max-width: 880px) {
   .hero-grid, .grid.two, .stats, .topbar, .controls { grid-template-columns: 1fr; flex-direction: column; }
   .topbar { padding: 22px 20px; gap: 18px; }
@@ -275,6 +403,8 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   #latestDigest h3 { font-size: 28px; }
   #latestDigest p, .card p { font-size: 17px; }
   .controls select { max-width:none; }
+  .detail-header { flex-direction: column; }
+  .detail-actions { justify-content: flex-start; }
 }
 
 @media (max-width: 640px) {
@@ -372,6 +502,9 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   .mini-pick {
     padding: 16px;
   }
+  .detail-panel {
+    padding: 18px 16px;
+  }
   .card h3,
   #latestDigest h3 {
     font-size: 24px;
@@ -380,6 +513,14 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   .panel-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .detail-header h2 {
+    font-size: 28px;
+  }
+  .markdown-body p,
+  .markdown-body li {
+    font-size: 16px;
+    line-height: 1.6;
   }
   .link-row {
     gap: 10px;

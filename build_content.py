@@ -38,8 +38,12 @@ def clean_md(text: str) -> str:
     text = re.sub(r'`([^`]+)`', r'\1', text)
     text = re.sub(r'\*\*(.*?)\*\*', r'\1', text)
     text = re.sub(r'\*(.*?)\*', r'\1', text)
-    text = re.sub(r'^-\s+', '', text, flags=re.M)
+    text = re.sub(r'^[-*]\s+', '', text, flags=re.M)
     return text.strip()
+
+
+def normalize_verdict(text: str) -> str:
+    return re.sub(r'^\*+\s*', '', clean_md(text)).strip()
 
 
 def parse_daily(path: Path) -> dict:
@@ -74,7 +78,7 @@ def parse_note(path: Path) -> dict:
 
     quick = extract_section(text, 'Quick verdict')
     verdict_lines = [ln.strip() for ln in quick.splitlines() if ln.strip()]
-    verdict = clean_md(verdict_lines[0]) if verdict_lines else ''
+    verdict = normalize_verdict(verdict_lines[0]) if verdict_lines else ''
     verdict_text = clean_md('\n'.join(verdict_lines[1:]).strip())
     overview = clean_md(extract_section(text, 'One-paragraph overview'))
     why_it_matters = clean_md(extract_subsection(text, '12. Why does this matter for cabbageland?'))
@@ -109,6 +113,19 @@ def parse_related(path: Path) -> dict:
     }
 
 
+def collect_markdown() -> dict[str, str]:
+    markdown: dict[str, str] = {}
+    for subdir in ('daily_papers', 'paper_notes', 'related_work'):
+        base = SOURCE_REPO / subdir
+        if not base.exists():
+            continue
+        for path in base.glob('*.md'):
+            if path.name == '.gitkeep':
+                continue
+            markdown[f'{subdir}/{path.name}'] = read_text(path)
+    return markdown
+
+
 def main() -> None:
     daily_dir = SOURCE_REPO / 'daily_papers'
     notes_dir = SOURCE_REPO / 'paper_notes'
@@ -135,6 +152,7 @@ def main() -> None:
         'digests': digests,
         'notes': notes,
         'related': related,
+        'markdown': collect_markdown(),
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
