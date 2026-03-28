@@ -104,8 +104,21 @@ function detailRecord(path) {
   return { kind: 'Markdown', title: path.split('/').pop() || path, meta: '', sourcePath: path };
 }
 
+function audioInfoForPath(path) {
+  return state.content?.audio?.[path] || null;
+}
+
+function startAudioPlayback(audioInfo) {
+  if (!audioInfo) return;
+  els.detailAudioPlayer.src = `./${audioInfo.audioPath}`;
+  els.detailAudioPlayer.classList.remove('hidden');
+  els.detailAudioPlayer.play().catch((err) => {
+    console.error('Audio playback failed', err);
+  });
+}
+
 function configureAudioForPath(path) {
-  const audioInfo = state.content?.audio?.[path];
+  const audioInfo = audioInfoForPath(path);
   els.detailAudioPlayer.pause();
   els.detailAudioPlayer.classList.add('hidden');
   els.detailAudioPlayer.removeAttribute('src');
@@ -120,14 +133,21 @@ function configureAudioForPath(path) {
   els.detailAudioButton.classList.remove('hidden');
   els.detailAudioButton.textContent = audioInfo.label || '▶ play audio';
   els.detailAudioButton.onclick = async () => {
-    els.detailAudioPlayer.src = `./${audioInfo.audioPath}`;
-    els.detailAudioPlayer.classList.remove('hidden');
-    try {
-      await els.detailAudioPlayer.play();
-    } catch (err) {
-      console.error('Audio playback failed', err);
-    }
+    startAudioPlayback(audioInfo);
   };
+}
+
+function wireCardListenButton(node, path) {
+  const audioInfo = audioInfoForPath(path);
+  const button = node.querySelector('.listen-link');
+  if (!button || !audioInfo) return;
+  button.classList.remove('hidden');
+  button.textContent = 'listen';
+  button.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openDetailByPath(path);
+    requestAnimationFrame(() => startAudioPlayback(audioInfo));
+  });
 }
 
 function openDetailByPath(path) {
@@ -282,6 +302,7 @@ function renderNotes() {
     mdLink.href = githubMarkdownUrl(item.path);
     mdLink.textContent = 'open on GitHub';
     node.querySelector('[data-open-path]')?.addEventListener('click', () => openDetailByPath(item.path));
+    wireCardListenButton(node, item.path);
     makeClickableCard(node, item.path);
     els.notesList.appendChild(node);
   }

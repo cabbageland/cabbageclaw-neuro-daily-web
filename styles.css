@@ -219,8 +219,8 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 .theme { color: var(--text) !important; font-weight: 700; font-size: 21px; line-height: 1.3; }
 details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-weight: 700; }
 .link-row { display:flex; flex-wrap:wrap; gap:14px; margin-top: 14px; }
-.link-row a, .related-card a, .card-title-link { color: var(--accent-2); text-decoration:none; font-weight:700; }
-.link-row a {
+.link-row a, .link-row button, .related-card a, .card-title-link { color: var(--accent-2); text-decoration:none; font-weight:700; }
+.link-row a, .link-row button {
   display: inline-flex;
   align-items: center;
   padding: 10px 14px;
@@ -228,11 +228,11 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   border: 1px solid rgba(137,183,255,.18);
   background: rgba(137,183,255,.07);
 }
-.link-row a:hover {
+.link-row a:hover, .link-row button:hover {
   background: rgba(137,183,255,.13);
 }
 .card-title-link { color: var(--text); }
-.card-title-link:hover, .link-row a:hover, .related-card a:hover, .chip:hover { text-decoration: underline; }
+.card-title-link:hover, .link-row a:hover, .link-row button:hover, .related-card a:hover, .chip:hover { text-decoration: underline; }
 .clickable-card { cursor: pointer; }
 .clickable-card:hover { border-color: rgba(137,183,255,.3); box-shadow: 0 20px 60px rgba(0,0,0,0.35), 0 0 0 1px rgba(137,183,255,.12) inset; }
 .clickable-card:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
@@ -532,7 +532,8 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   .link-row {
     gap: 10px;
   }
-  .link-row a {
+  .link-row a,
+  .link-row button {
     width: 100%;
     justify-content: center;
   }
