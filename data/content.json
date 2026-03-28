@@ -216,17 +216,23 @@
     "daily_papers/2026-03-27.md": {
       "label": "Listen to digest",
       "scriptPath": "audio_scripts/2026-03-27_digest_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_digest.wav"
+      "audioPath": "audio/generated/2026-03-27_digest.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.85
     },
     "paper_notes/deep_learning_assisted_v1_circuit_simulation.md": {
       "label": "Listen to reading notes",
       "scriptPath": "audio_scripts/2026-03-27_reading_notes_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_reading_notes.wav"
+      "audioPath": "audio/generated/2026-03-27_reading_notes.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.85
     },
     "paper_notes/modular_bidirectional_implantable_interface.md": {
       "label": "Listen to reading notes",
       "scriptPath": "audio_scripts/2026-03-27_reading_notes_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_reading_notes.wav"
+      "audioPath": "audio/generated/2026-03-27_reading_notes.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.85
     }
   }
 }
