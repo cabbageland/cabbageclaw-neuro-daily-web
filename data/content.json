@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-28T18:43:56.216763+00:00",
+  "generatedAt": "2026-03-29T01:26:18.126997+00:00",
   "repo": "cabbageland/cabbageclaw-neuro-daily",
   "digests": [
     {
@@ -262,20 +262,117 @@
     "related_work/closed_loop_and_personalized_targeting.md": "# Closed-loop and personalized targeting\n\n## Current synthesis\n\nThe good neuromodulation papers are converging on a stricter standard than the field used to tolerate.\n\nIf a paper claims precision stimulation, it should specify:\n\n1. **Target** — what circuit, tract, node, or state variable is being targeted?\n2. **Readout** — what signal says the target is engaged or the patient state changed?\n3. **Controller / selection logic** — how does the intervention decide where, when, or how to stimulate?\n4. **Validation** — what evidence shows the stimulation changed the intended signal or circuit, not just a downstream clinical score?\n\n## Pattern from recent papers\n\n### Stronger pattern\n\n- Personalized target discovery tied to symptom-linked physiology.\n- Explicit biomarker or state-estimation logic.\n- Evidence of target engagement beyond anatomy.\n- Closed-loop or adaptive rules that are actually implemented, not just proposed.\n- Willingness to show what the controller is optimizing.\n- Clear separation between **targeting** and **state tracking** as linked but distinct problems.\n- Mechanism papers that identify directional parameter effects instead of reporting generic “modulation.”\n\n### Weaker pattern\n\n- “Network-guided” targeting that never demonstrates network engagement.\n- “AI-guided” or “precision” branding with no real control logic.\n- Small open-label studies with huge claims and no serious comparator.\n- Reliance on average symptom change without state specificity or subgroup reasoning.\n- Cross-treatment network stories that infer causality from retrospective convergence without direct perturbation evidence.\n\n## Working judgment\n\nRight now, invasive work is still ahead on mechanistic credibility because it can directly sense and perturb the relevant circuit. Noninvasive work is improving, especially when it uses online optimization or person-specific field/network modeling, but it still often lacks durable state readouts and sufficiently strong behavioral endpoints.\n\nA useful distinction is emerging:\n\n- **Targeting papers** tell you *where* you are probably stimulating.\n- **Biomarker papers** tell you *what state variable may matter*.\n- **Controller papers** tell you *how stimulation is adjusted online*.\n\nThe best future work will have all three. Most current papers have only one, occasionally two.\n\n## Updated heuristic from recent papers\n\nPrefer papers that make the following chain explicit:\n\n**symptom or state -> biomarker/readout -> target selection -> stimulation -> measured circuit change -> clinical or behavioral effect**\n\nAnd add one more filter:\n\n**Can the paper tell you whether failure came from the wrong target, the wrong state variable, or the wrong control rule?**\n\nIf not, the paper is usually less useful than the title suggests.\n\n## Recent examples informing this heuristic\n\n- **OCD invasive mapping paper:** strong because it links symptom state, physiology, target search, and later implantation.\n- **BNST-NAc depression DBS biomarker paper:** strong because it gives a candidate state variable and shows it changes with stimulation state.\n- **Precision TMS modeling paper:** useful because it attacks the hidden assumption that a nominal cortical coordinate equals a stable network target across people.\n- **Closed-loop tACS-fMRI paper:** useful because it makes the control objective explicit, even if the setup is still operationally heavy.\n- **tFUS corticothalamic mechanism paper:** adjacent but valuable because it maps parameter regime to directional circuit effect.\n"
   },
   "audio": {
+    "daily_papers/2026-03-25.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-25_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-03-25_digest.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "daily_papers/2026-03-26.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-26_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-03-26_digest.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
     "daily_papers/2026-03-27.md": {
-      "label": "Listen to digest",
+      "label": "listen",
       "scriptPath": "audio_scripts/2026-03-27_digest_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_digest.wav"
+      "audioPath": "audio/generated/2026-03-27_digest.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "daily_papers/2026-03-28.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-28_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-03-28_digest.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/bnst_nac_dbs_depression_biomarkers.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/bnst_nac_dbs_depression_biomarkers_audio_script.md",
+      "audioPath": "audio/generated/bnst_nac_dbs_depression_biomarkers.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/closed_loop_tacs_fmri_optimization.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_tacs_fmri_optimization_audio_script.md",
+      "audioPath": "audio/generated/closed_loop_tacs_fmri_optimization.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/connectivity_guided_rTMS_chronic_pain.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/connectivity_guided_rTMS_chronic_pain_audio_script.md",
+      "audioPath": "audio/generated/connectivity_guided_rTMS_chronic_pain.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
     },
     "paper_notes/deep_learning_assisted_v1_circuit_simulation.md": {
-      "label": "Listen to reading notes",
-      "scriptPath": "audio_scripts/2026-03-27_reading_notes_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_reading_notes.wav"
+      "label": "listen",
+      "scriptPath": "audio_scripts/deep_learning_assisted_v1_circuit_simulation_audio_script.md",
+      "audioPath": "audio/generated/deep_learning_assisted_v1_circuit_simulation.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/dsr_mpc_neural_state_transitions.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/dsr_mpc_neural_state_transitions_audio_script.md",
+      "audioPath": "audio/generated/dsr_mpc_neural_state_transitions.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/long_term_personalized_adbs_pd.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/long_term_personalized_adbs_pd_audio_script.md",
+      "audioPath": "audio/generated/long_term_personalized_adbs_pd.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
     },
     "paper_notes/modular_bidirectional_implantable_interface.md": {
-      "label": "Listen to reading notes",
-      "scriptPath": "audio_scripts/2026-03-27_reading_notes_audio_script.md",
-      "audioPath": "audio/generated/2026-03-27_reading_notes.wav"
+      "label": "listen",
+      "scriptPath": "audio_scripts/modular_bidirectional_implantable_interface_audio_script.md",
+      "audioPath": "audio/generated/modular_bidirectional_implantable_interface.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/ocd_invasive_brain_mapping_personalized_targets.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/ocd_invasive_brain_mapping_personalized_targets_audio_script.md",
+      "audioPath": "audio/generated/ocd_invasive_brain_mapping_personalized_targets.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/precision_dbs_neuroimaging_humans.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/precision_dbs_neuroimaging_humans_audio_script.md",
+      "audioPath": "audio/generated/precision_dbs_neuroimaging_humans.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/precision_network_modeling_tms.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/precision_network_modeling_tms_audio_script.md",
+      "audioPath": "audio/generated/precision_network_modeling_tms.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "paper_notes/tfus_bidirectional_corticothalamic_modulation.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/tfus_bidirectional_corticothalamic_modulation_audio_script.md",
+      "audioPath": "audio/generated/tfus_bidirectional_corticothalamic_modulation.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
+    },
+    "related_work/closed_loop_and_personalized_targeting.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_and_personalized_targeting_audio_script.md",
+      "audioPath": "audio/generated/closed_loop_and_personalized_targeting.wav",
+      "voice": "en_US-ryan-medium",
+      "rate": 0.79
     }
   }
 }
