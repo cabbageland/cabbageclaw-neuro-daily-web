@@ -358,6 +358,13 @@
       "label": "Listen to reading notes",
       "scriptPath": "audio_scripts/2026-03-27_reading_notes_audio_script.md",
       "audioPath": "audio/generated/2026-03-27_reading_notes.wav"
+    },
+    "daily_papers/2026-03-28.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-28_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-03-28_digest.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     }
   }
 }
