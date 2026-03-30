@@ -365,6 +365,27 @@
       "audioPath": "audio/generated/2026-03-28_digest.wav",
       "voice": "en_US-hfc_male-medium",
       "rate": 0.95
+    },
+    "daily_papers/2026-03-29.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-29_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-03-29_digest.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/portable_hd_tacs_mdd.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/portable_hd_tacs_mdd_audio_script.md",
+      "audioPath": "audio/generated/portable_hd_tacs_mdd.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/connectome_guided_dbs_gait.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/connectome_guided_dbs_gait_audio_script.md",
+      "audioPath": "audio/generated/connectome_guided_dbs_gait.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     }
   }
 }

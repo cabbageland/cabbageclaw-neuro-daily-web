@@ -264,6 +264,7 @@ function renderDigests() {
     node.querySelector('.overview').textContent = short(item.overview, 420);
     node.querySelector('.takeaway').textContent = item.takeaway;
     node.querySelector('[data-open-path]')?.addEventListener('click', () => openDetailByPath(item.path));
+    wireCardListenButton(node, item.path);
     makeClickableCard(node, item.path);
     els.digestList.appendChild(node);
   }
