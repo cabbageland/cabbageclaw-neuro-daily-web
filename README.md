@@ -19,6 +19,12 @@ GitHub Pages dashboard for `cabbageland/cabbageclaw-neuro-daily`.
 - `build_content.py` — generates `data/content.json` from the local `cabbageclaw-neuro-daily` repo
 - `data/content.json` — generated content snapshot
 
+## Audio assets
+
+Generated audio files are committed to this repo because they are part of the published site output.
+
+Piper voice model binaries are no longer intended to live in this repo long term. The audio pipeline in the sibling `cabbageclaw-neuro-daily` repo now resolves voices from a shared local cache at `~/.cache/piper-voices/` and auto-downloads them there if missing.
+
 ## Publishing on GitHub Pages
 
 This repo is designed to work as a plain static site.
