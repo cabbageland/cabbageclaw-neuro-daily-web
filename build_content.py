@@ -10,6 +10,12 @@ ROOT = Path(__file__).resolve().parent
 SOURCE_REPO = ROOT.parent / 'cabbageclaw-neuro-daily'
 OUT_PATH = ROOT / 'data' / 'content.json'
 REPO_NAME = 'cabbageland/cabbageclaw-neuro-daily'
+SITE_BASE = 'https://cabbageland.github.io/cabbageclaw-neuro-daily-web'
+
+
+def site_url(path: str) -> str:
+    clean = path.removesuffix('.md')
+    return f'{SITE_BASE}/{clean}'
 
 
 def read_text(path: Path) -> str:
@@ -65,6 +71,7 @@ def parse_daily(path: Path) -> dict:
         'mostRelevantPaper': top.split('\n\n', 1)[0].strip(),
         'rankedTitles': ranked_titles,
         'path': f'daily_papers/{path.name}',
+        'url': site_url(f'daily_papers/{path.name}'),
     }
 
 
@@ -97,6 +104,7 @@ def parse_note(path: Path) -> dict:
         'whyItMatters': why_it_matters,
         'finalDecision': final_decision,
         'path': f'paper_notes/{path.name}',
+        'url': site_url(f'paper_notes/{path.name}'),
     }
 
 
@@ -110,6 +118,7 @@ def parse_related(path: Path) -> dict:
         'title': title,
         'overview': overview,
         'path': f'related_work/{path.name}',
+        'url': site_url(f'related_work/{path.name}'),
     }
 
 
