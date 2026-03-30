@@ -126,24 +126,62 @@ def collect_markdown() -> dict[str, str]:
     return markdown
 
 
+def existing_audio_path(*candidates: Path) -> Path | None:
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return None
+
+
 def collect_audio() -> dict[str, dict[str, str]]:
-    audio = {
-        'daily_papers/2026-03-27.md': {
+    audio: dict[str, dict[str, str]] = {}
+    generated_dir = ROOT / 'audio' / 'generated'
+    script_dir = SOURCE_REPO / 'audio_scripts'
+
+    for digest_path in sorted((SOURCE_REPO / 'daily_papers').glob('*.md')):
+        if digest_path.name == '.gitkeep':
+            continue
+        date = digest_path.stem
+        audio_file = existing_audio_path(
+            generated_dir / f'{date}_digest.wav',
+            generated_dir / f'{date}_digest.mp3',
+        )
+        if not audio_file:
+            continue
+        script_file = existing_audio_path(
+            script_dir / f'{date}_digest_audio_script.md',
+            script_dir / f'{date}_audio_script.md',
+        )
+        info = {
             'label': 'Listen to digest',
-            'scriptPath': 'audio_scripts/2026-03-27_digest_audio_script.md',
-            'audioPath': 'audio/generated/2026-03-27_digest.wav',
-        },
-        'paper_notes/deep_learning_assisted_v1_circuit_simulation.md': {
-            'label': 'Listen to reading notes',
-            'scriptPath': 'audio_scripts/2026-03-27_reading_notes_audio_script.md',
-            'audioPath': 'audio/generated/2026-03-27_reading_notes.wav',
-        },
-        'paper_notes/modular_bidirectional_implantable_interface.md': {
-            'label': 'Listen to reading notes',
-            'scriptPath': 'audio_scripts/2026-03-27_reading_notes_audio_script.md',
-            'audioPath': 'audio/generated/2026-03-27_reading_notes.wav',
-        },
-    }
+            'audioPath': str(audio_file.relative_to(ROOT)).replace('\\', '/'),
+        }
+        if script_file:
+            info['scriptPath'] = str(script_file.relative_to(SOURCE_REPO)).replace('\\', '/')
+        audio[f'daily_papers/{digest_path.name}'] = info
+
+    for note_path in sorted((SOURCE_REPO / 'paper_notes').glob('*.md')):
+        if note_path.name == '.gitkeep':
+            continue
+        slug = note_path.stem
+        audio_file = existing_audio_path(
+            generated_dir / f'{slug}.wav',
+            generated_dir / f'{slug}.mp3',
+        )
+        if not audio_file:
+            continue
+        info = {
+            'label': 'Listen to note',
+            'audioPath': str(audio_file.relative_to(ROOT)).replace('\\', '/'),
+        }
+        script_file = existing_audio_path(
+            script_dir / f'{slug}_audio_script.md',
+            script_dir / f'{slug}.md',
+        )
+        if script_file:
+            info['scriptPath'] = str(script_file.relative_to(SOURCE_REPO)).replace('\\', '/')
+        audio[f'paper_notes/{note_path.name}'] = info
+
     return audio
 
 
