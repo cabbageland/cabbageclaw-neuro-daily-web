@@ -309,6 +309,13 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   justify-content: flex-end;
 }
 
+.detail-actions .source-pill {
+  font-size: 15px;
+  line-height: 1.2;
+  min-width: 140px;
+  min-height: 48px;
+}
+
 .detail-audio {
   width: min(100%, 520px);
   margin: 0 0 22px;

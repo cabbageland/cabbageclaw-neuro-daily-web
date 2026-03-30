@@ -29,6 +29,10 @@ function getMarked() {
   return window.marked;
 }
 
+function stripLeadingMarkdownTitle(text = '') {
+  return text.replace(/^#\s+.+?(\n+|$)/, '');
+}
+
 function renderMarkdown(text = '') {
   const marked = getMarked();
   marked.setOptions({
@@ -37,7 +41,7 @@ function renderMarkdown(text = '') {
     headerIds: false,
     mangle: false
   });
-  return marked.parse(text);
+  return marked.parse(stripLeadingMarkdownTitle(text));
 }
 
 function makeClickableCard(node, path) {
