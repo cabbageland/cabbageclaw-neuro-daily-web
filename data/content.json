@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T18:37:40.212190+00:00",
+  "generatedAt": "2026-04-02T02:43:19.501127+00:00",
   "repo": "cabbageland/cabbageclaw-neuro-daily",
   "digests": [
     {
@@ -687,6 +687,11 @@
       "audioPath": "audio/generated/passivity_control_epilepsy.wav",
       "scriptPath": "audio_scripts/passivity_control_epilepsy_audio_script.md"
     },
+    "paper_notes/pd_motor_decoding_personalized_dbs.md": {
+      "label": "Listen to note",
+      "audioPath": "audio/generated/pd_motor_decoding_personalized_dbs.wav",
+      "scriptPath": "audio_scripts/pd_motor_decoding_personalized_dbs_audio_script.md"
+    },
     "paper_notes/portable_hd_tacs_mdd.md": {
       "label": "Listen to note",
       "audioPath": "audio/generated/portable_hd_tacs_mdd.wav",
@@ -701,6 +706,16 @@
       "label": "Listen to note",
       "audioPath": "audio/generated/precision_network_modeling_tms.wav",
       "scriptPath": "audio_scripts/precision_network_modeling_tms_audio_script.md"
+    },
+    "paper_notes/predicting_pd_neuromod_virtual_brain.md": {
+      "label": "Listen to note",
+      "audioPath": "audio/generated/predicting_pd_neuromod_virtual_brain.wav",
+      "scriptPath": "audio_scripts/predicting_pd_neuromod_virtual_brain_audio_script.md"
+    },
+    "paper_notes/ptsd_scg_uf_dbs_long_term.md": {
+      "label": "Listen to note",
+      "audioPath": "audio/generated/ptsd_scg_uf_dbs_long_term.wav",
+      "scriptPath": "audio_scripts/ptsd_scg_uf_dbs_long_term_audio_script.md"
     },
     "paper_notes/tao_tms_naturalistic_trd.md": {
       "label": "Listen to note",
