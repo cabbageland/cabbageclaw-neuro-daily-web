@@ -1,4 +1,5 @@
 const SOURCE_BASE = 'https://github.com/cabbageland/cabbageclaw-neuro-daily/blob/main/';
+const HASH_ROUTE_PREFIX = '#/';
 
 function githubMarkdownUrl(path = '') {
   return `${SOURCE_BASE}${path}`;
@@ -154,7 +155,7 @@ function wireCardListenButton(node, path) {
   });
 }
 
-function openDetailByPath(path) {
+function openDetailByPath(path, options = {}) {
   if (!state.content?.markdown?.[path]) {
     window.open(githubMarkdownUrl(path), '_blank', 'noreferrer');
     return;
@@ -170,6 +171,9 @@ function openDetailByPath(path) {
   els.detailSourceLink.textContent = 'open on GitHub';
   configureAudioForPath(path);
   setActiveView('detail');
+  if (!options.skipRouteUpdate) {
+    window.location.hash = `${HASH_ROUTE_PREFIX}${path}`;
+  }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -347,6 +351,9 @@ function setActiveView(view) {
   }
   document.querySelectorAll('.tab').forEach((btn) => btn.classList.toggle('active', btn.dataset.view === view));
   document.querySelectorAll('.view').forEach((v) => v.classList.toggle('active', v.id === `view-${view}`));
+  if (view !== 'detail' && window.location.hash.startsWith(HASH_ROUTE_PREFIX)) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
 }
 
 function setupTabs() {
@@ -357,12 +364,21 @@ function setupTabs() {
   });
 }
 
+function handleRoute() {
+  const hash = window.location.hash || '';
+  if (!hash.startsWith(HASH_ROUTE_PREFIX)) return;
+  const path = decodeURIComponent(hash.slice(HASH_ROUTE_PREFIX.length));
+  if (!path) return;
+  openDetailByPath(path, { skipRouteUpdate: true });
+}
+
 async function init() {
   setupTabs();
   els.detailBackButton.addEventListener('click', () => {
     setActiveView(state.previousView || 'overview');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+  window.addEventListener('hashchange', handleRoute);
   els.searchInput.addEventListener('input', (e) => {
     state.query = e.target.value;
     if (state.query.trim()) {
@@ -382,6 +398,7 @@ async function init() {
   const res = await fetch('./data/content.json');
   state.content = await res.json();
   renderAll();
+  handleRoute();
 }
 
 init().catch((err) => {
