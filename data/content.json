@@ -2163,624 +2163,914 @@
   },
   "audio": {
     "daily_papers/2026-03-25.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-25_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-25_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-25_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-26.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-26_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-26_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-26_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-27.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-27_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-27_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-27_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-28.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-28_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-28_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-28_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-29.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-29_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-29_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-29_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-30.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-30_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-30_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-30_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-03-31.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-03-31_digest_audio_script.md",
       "audioPath": "audio/generated/2026-03-31_digest.wav",
-      "scriptPath": "audio_scripts/2026-03-31_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-01.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-01_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-01_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-01_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-02.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-02_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-02_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-02_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-03.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-03_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-03_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-03_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-04.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-04_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-04_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-04_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-05.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-05_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-05_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-05_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-06.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-06_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-06_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-06_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-07.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-07_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-07_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-07_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-08.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-08_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-08_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-08_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-09.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-09_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-09_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-09_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-10.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-10_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-10_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-10_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-11.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-11_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-11_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-11_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-12.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-12_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-12_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-12_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-13.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-13_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-13_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-13_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-14.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-14_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-14_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-14_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-15.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-15_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-15_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-15_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-16.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-16_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-16_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-16_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-17.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-17_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-17_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-17_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-18.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-18_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-18_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-18_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-19.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-19_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-19_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-19_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-20.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-20_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-20_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-20_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-21.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-21_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-21_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-21_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-22.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-22_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-22_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-22_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-23.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-23_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-23_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-23_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "daily_papers/2026-04-24.md": {
-      "label": "Listen to digest",
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-24_digest_audio_script.md",
       "audioPath": "audio/generated/2026-04-24_digest.wav",
-      "scriptPath": "audio_scripts/2026-04-24_digest_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "daily_papers/2026-04-25.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/2026-04-25_digest_audio_script.md",
+      "audioPath": "audio/generated/2026-04-25_digest.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/adolescent_mdd_childhood_trauma_connectome.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/adolescent_mdd_childhood_trauma_connectome_audio_script.md",
+      "audioPath": "audio/generated/adolescent_mdd_childhood_trauma_connectome.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/adversarial_ai_doc.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/adversarial_ai_doc_audio_script.md",
       "audioPath": "audio/generated/adversarial_ai_doc.wav",
-      "scriptPath": "audio_scripts/adversarial_ai_doc_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/amygdala_tfus_ambiguous_emotion.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/amygdala_tfus_ambiguous_emotion_audio_script.md",
       "audioPath": "audio/generated/amygdala_tfus_ambiguous_emotion.wav",
-      "scriptPath": "audio_scripts/amygdala_tfus_ambiguous_emotion_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/amygdala_tfus_matrd_trial.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/amygdala_tfus_matrd_trial_audio_script.md",
       "audioPath": "audio/generated/amygdala_tfus_matrd_trial.wav",
-      "scriptPath": "audio_scripts/amygdala_tfus_matrd_trial_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/ant_dbs_epilepsy_biomarkers.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/ant_dbs_epilepsy_biomarkers_audio_script.md",
       "audioPath": "audio/generated/ant_dbs_epilepsy_biomarkers.wav",
-      "scriptPath": "audio_scripts/ant_dbs_epilepsy_biomarkers_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/bla_gamma_pfc_dbs_analgesia.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/bla_gamma_pfc_dbs_analgesia_audio_script.md",
       "audioPath": "audio/generated/bla_gamma_pfc_dbs_analgesia.wav",
-      "scriptPath": "audio_scripts/bla_gamma_pfc_dbs_analgesia_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/bnst_nac_dbs_depression_biomarkers.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/bnst_nac_dbs_depression_biomarkers_audio_script.md",
       "audioPath": "audio/generated/bnst_nac_dbs_depression_biomarkers.wav",
-      "scriptPath": "audio_scripts/bnst_nac_dbs_depression_biomarkers_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/brain_stimulation_prevents_neural_downregulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/brain_stimulation_prevents_neural_downregulation_audio_script.md",
       "audioPath": "audio/generated/brain_stimulation_prevents_neural_downregulation.wav",
-      "scriptPath": "audio_scripts/brain_stimulation_prevents_neural_downregulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/causal_connectivity_spTMS_fMRI.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/causal_connectivity_spTMS_fMRI_audio_script.md",
       "audioPath": "audio/generated/causal_connectivity_spTMS_fMRI.wav",
-      "scriptPath": "audio_scripts/causal_connectivity_spTMS_fMRI_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/channel_capacity_effective_connectivity.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/channel_capacity_effective_connectivity_audio_script.md",
       "audioPath": "audio/generated/channel_capacity_effective_connectivity.wav",
-      "scriptPath": "audio_scripts/channel_capacity_effective_connectivity_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/circuit_targeted_tms_anxiety_mdd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/circuit_targeted_tms_anxiety_mdd_audio_script.md",
       "audioPath": "audio/generated/circuit_targeted_tms_anxiety_mdd.wav",
-      "scriptPath": "audio_scripts/circuit_targeted_tms_anxiety_mdd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/closed_loop_alpha_neurofeedback_attention.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_alpha_neurofeedback_attention_audio_script.md",
       "audioPath": "audio/generated/closed_loop_alpha_neurofeedback_attention.wav",
-      "scriptPath": "audio_scripts/closed_loop_alpha_neurofeedback_attention_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/closed_loop_tacs_fmri_optimization.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_tacs_fmri_optimization_audio_script.md",
       "audioPath": "audio/generated/closed_loop_tacs_fmri_optimization.wav",
-      "scriptPath": "audio_scripts/closed_loop_tacs_fmri_optimization_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/closed_loop_vns_chronic_stroke.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_vns_chronic_stroke_audio_script.md",
       "audioPath": "audio/generated/closed_loop_vns_chronic_stroke.wav",
-      "scriptPath": "audio_scripts/closed_loop_vns_chronic_stroke_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/competitive_interactions_brain_dynamics.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/competitive_interactions_brain_dynamics_audio_script.md",
       "audioPath": "audio/generated/competitive_interactions_brain_dynamics.wav",
-      "scriptPath": "audio_scripts/competitive_interactions_brain_dynamics_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/connection_density_network_metrics.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/connection_density_network_metrics_audio_script.md",
       "audioPath": "audio/generated/connection_density_network_metrics.wav",
-      "scriptPath": "audio_scripts/connection_density_network_metrics_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/connectivity_guided_rTMS_chronic_pain.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/connectivity_guided_rTMS_chronic_pain_audio_script.md",
       "audioPath": "audio/generated/connectivity_guided_rTMS_chronic_pain.wav",
-      "scriptPath": "audio_scripts/connectivity_guided_rTMS_chronic_pain_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/connectome_guided_dbs_gait.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/connectome_guided_dbs_gait_audio_script.md",
       "audioPath": "audio/generated/connectome_guided_dbs_gait.wav",
-      "scriptPath": "audio_scripts/connectome_guided_dbs_gait_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/cortical_beta_motor_cognitive_rtms.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/cortical_beta_motor_cognitive_rtms_audio_script.md",
       "audioPath": "audio/generated/cortical_beta_motor_cognitive_rtms.wav",
-      "scriptPath": "audio_scripts/cortical_beta_motor_cognitive_rtms_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/cortical_beta_rTMS_motor_cognitive.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/cortical_beta_rTMS_motor_cognitive_audio_script.md",
       "audioPath": "audio/generated/cortical_beta_rTMS_motor_cognitive.wav",
-      "scriptPath": "audio_scripts/cortical_beta_rTMS_motor_cognitive_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/cortical_vs_subcortical_cldbs_et.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/cortical_vs_subcortical_cldbs_et_audio_script.md",
       "audioPath": "audio/generated/cortical_vs_subcortical_cldbs_et.wav",
-      "scriptPath": "audio_scripts/cortical_vs_subcortical_cldbs_et_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/corticostriatal_dbs_self_injury_autism.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/corticostriatal_dbs_self_injury_autism_audio_script.md",
       "audioPath": "audio/generated/corticostriatal_dbs_self_injury_autism.wav",
-      "scriptPath": "audio_scripts/corticostriatal_dbs_self_injury_autism_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/craving_connectivity_signature_sud.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/craving_connectivity_signature_sud_audio_script.md",
       "audioPath": "audio/generated/craving_connectivity_signature_sud.wav",
-      "scriptPath": "audio_scripts/craving_connectivity_signature_sud_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/cubnm_gpu_accelerated_brain_network_modeling.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/cubnm_gpu_accelerated_brain_network_modeling_audio_script.md",
       "audioPath": "audio/generated/cubnm_gpu_accelerated_brain_network_modeling.wav",
-      "scriptPath": "audio_scripts/cubnm_gpu_accelerated_brain_network_modeling_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/dcm_multistable_circuit_limits.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/dcm_multistable_circuit_limits_audio_script.md",
       "audioPath": "audio/generated/dcm_multistable_circuit_limits.wav",
-      "scriptPath": "audio_scripts/dcm_multistable_circuit_limits_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/deep_learning_assisted_v1_circuit_simulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/deep_learning_assisted_v1_circuit_simulation_audio_script.md",
       "audioPath": "audio/generated/deep_learning_assisted_v1_circuit_simulation.wav",
-      "scriptPath": "audio_scripts/deep_learning_assisted_v1_circuit_simulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/deep_representation_learning_vns_response.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/deep_representation_learning_vns_response_audio_script.md",
       "audioPath": "audio/generated/deep_representation_learning_vns_response.wav",
-      "scriptPath": "audio_scripts/deep_representation_learning_vns_response_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/developmental_aging_brain_network_switching_dynamics.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/developmental_aging_brain_network_switching_dynamics_audio_script.md",
       "audioPath": "audio/generated/developmental_aging_brain_network_switching_dynamics.wav",
-      "scriptPath": "audio_scripts/developmental_aging_brain_network_switching_dynamics_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/dsr_mpc_neural_state_transitions.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/dsr_mpc_neural_state_transitions_audio_script.md",
       "audioPath": "audio/generated/dsr_mpc_neural_state_transitions.wav",
-      "scriptPath": "audio_scripts/dsr_mpc_neural_state_transitions_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/dual_target_bipallidal_dbs_tourette.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/dual_target_bipallidal_dbs_tourette_audio_script.md",
       "audioPath": "audio/generated/dual_target_bipallidal_dbs_tourette.wav",
-      "scriptPath": "audio_scripts/dual_target_bipallidal_dbs_tourette_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/eeg_digital_biomarker_tms_mdd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/eeg_digital_biomarker_tms_mdd_audio_script.md",
       "audioPath": "audio/generated/eeg_digital_biomarker_tms_mdd.wav",
-      "scriptPath": "audio_scripts/eeg_digital_biomarker_tms_mdd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/erna_stn_dbs_programming.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/erna_stn_dbs_programming_audio_script.md",
       "audioPath": "audio/generated/erna_stn_dbs_programming.wav",
-      "scriptPath": "audio_scripts/erna_stn_dbs_programming_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/experimental_validation_directional_dbs_fem.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/experimental_validation_directional_dbs_fem_audio_script.md",
       "audioPath": "audio/generated/experimental_validation_directional_dbs_fem.wav",
-      "scriptPath": "audio_scripts/experimental_validation_directional_dbs_fem_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/fear_state_tms_extinction.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/fear_state_tms_extinction_audio_script.md",
       "audioPath": "audio/generated/fear_state_tms_extinction.wav",
-      "scriptPath": "audio_scripts/fear_state_tms_extinction_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/france_ant_dbs_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/france_ant_dbs_epilepsy_audio_script.md",
       "audioPath": "audio/generated/france_ant_dbs_epilepsy.wav",
-      "scriptPath": "audio_scripts/france_ant_dbs_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/frequency_dependent_whole_brain_reconfiguration_rtms_older_adults.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/frequency_dependent_whole_brain_reconfiguration_rtms_older_adults_audio_script.md",
       "audioPath": "audio/generated/frequency_dependent_whole_brain_reconfiguration_rtms_older_adults.wav",
-      "scriptPath": "audio_scripts/frequency_dependent_whole_brain_reconfiguration_rtms_older_adults_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/human_subcortical_connectome_400um.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/human_subcortical_connectome_400um_audio_script.md",
       "audioPath": "audio/generated/human_subcortical_connectome_400um.wav",
-      "scriptPath": "audio_scripts/human_subcortical_connectome_400um_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/implant_friendly_mri_dbs_3t.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/implant_friendly_mri_dbs_3t_audio_script.md",
       "audioPath": "audio/generated/implant_friendly_mri_dbs_3t.wav",
-      "scriptPath": "audio_scripts/implant_friendly_mri_dbs_3t_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/implantable_wireless_battery_free_selective_vns.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/implantable_wireless_battery_free_selective_vns_audio_script.md",
       "audioPath": "audio/generated/implantable_wireless_battery_free_selective_vns.wav",
-      "scriptPath": "audio_scripts/implantable_wireless_battery_free_selective_vns_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/individualized_tus_gpi_basal_ganglia.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/individualized_tus_gpi_basal_ganglia_audio_script.md",
       "audioPath": "audio/generated/individualized_tus_gpi_basal_ganglia.wav",
-      "scriptPath": "audio_scripts/individualized_tus_gpi_basal_ganglia_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/itbs_fnirs_response_prediction_mdd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/itbs_fnirs_response_prediction_mdd_audio_script.md",
       "audioPath": "audio/generated/itbs_fnirs_response_prediction_mdd.wav",
-      "scriptPath": "audio_scripts/itbs_fnirs_response_prediction_mdd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/jedi_jointly_embedded_inference_neural_dynamics.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/jedi_jointly_embedded_inference_neural_dynamics_audio_script.md",
       "audioPath": "audio/generated/jedi_jointly_embedded_inference_neural_dynamics.wav",
-      "scriptPath": "audio_scripts/jedi_jointly_embedded_inference_neural_dynamics_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/long_term_personalized_adbs_pd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/long_term_personalized_adbs_pd_audio_script.md",
       "audioPath": "audio/generated/long_term_personalized_adbs_pd.wav",
-      "scriptPath": "audio_scripts/long_term_personalized_adbs_pd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/magnetomechanical_vagal_gut_brain.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/magnetomechanical_vagal_gut_brain_audio_script.md",
       "audioPath": "audio/generated/magnetomechanical_vagal_gut_brain.wav",
-      "scriptPath": "audio_scripts/magnetomechanical_vagal_gut_brain_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/mdd_morphological_network_controllability.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/mdd_morphological_network_controllability_audio_script.md",
+      "audioPath": "audio/generated/mdd_morphological_network_controllability.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/metamaterial_ultrasound_trd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/metamaterial_ultrasound_trd_audio_script.md",
       "audioPath": "audio/generated/metamaterial_ultrasound_trd.wav",
-      "scriptPath": "audio_scripts/metamaterial_ultrasound_trd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/modular_bidirectional_implantable_interface.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/modular_bidirectional_implantable_interface_audio_script.md",
       "audioPath": "audio/generated/modular_bidirectional_implantable_interface.wav",
-      "scriptPath": "audio_scripts/modular_bidirectional_implantable_interface_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/mpfc_axons_striatal_stimulation_cognitive_control.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/mpfc_axons_striatal_stimulation_cognitive_control_audio_script.md",
       "audioPath": "audio/generated/mpfc_axons_striatal_stimulation_cognitive_control.wav",
-      "scriptPath": "audio_scripts/mpfc_axons_striatal_stimulation_cognitive_control_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/multimodal_image_guided_stn_dbs_pd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/multimodal_image_guided_stn_dbs_pd_audio_script.md",
       "audioPath": "audio/generated/multimodal_image_guided_stn_dbs_pd.wav",
-      "scriptPath": "audio_scripts/multimodal_image_guided_stn_dbs_pd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/multiscale_human_memory_dbs.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/multiscale_human_memory_dbs_audio_script.md",
       "audioPath": "audio/generated/multiscale_human_memory_dbs.wav",
-      "scriptPath": "audio_scripts/multiscale_human_memory_dbs_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/navigated_tms_combat_ptsd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/navigated_tms_combat_ptsd_audio_script.md",
       "audioPath": "audio/generated/navigated_tms_combat_ptsd.wav",
-      "scriptPath": "audio_scripts/navigated_tms_combat_ptsd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/ocd_invasive_brain_mapping_personalized_targets.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/ocd_invasive_brain_mapping_personalized_targets_audio_script.md",
       "audioPath": "audio/generated/ocd_invasive_brain_mapping_personalized_targets.wav",
-      "scriptPath": "audio_scripts/ocd_invasive_brain_mapping_personalized_targets_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/optimal_dbs_tourette_locations.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/optimal_dbs_tourette_locations_audio_script.md",
       "audioPath": "audio/generated/optimal_dbs_tourette_locations.wav",
-      "scriptPath": "audio_scripts/optimal_dbs_tourette_locations_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/optimal_stochastic_tracking_control_brain_networks.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/optimal_stochastic_tracking_control_brain_networks_audio_script.md",
       "audioPath": "audio/generated/optimal_stochastic_tracking_control_brain_networks.wav",
-      "scriptPath": "audio_scripts/optimal_stochastic_tracking_control_brain_networks_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/passive_neuromodulation_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/passive_neuromodulation_epilepsy_audio_script.md",
       "audioPath": "audio/generated/passive_neuromodulation_epilepsy.wav",
-      "scriptPath": "audio_scripts/passive_neuromodulation_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/passivity_control_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/passivity_control_epilepsy_audio_script.md",
       "audioPath": "audio/generated/passivity_control_epilepsy.wav",
-      "scriptPath": "audio_scripts/passivity_control_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/pd_metastable_dynamics_dbs_ttis.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/pd_metastable_dynamics_dbs_ttis_audio_script.md",
+      "audioPath": "audio/generated/pd_metastable_dynamics_dbs_ttis.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/pd_motor_decoding_personalized_dbs.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/pd_motor_decoding_personalized_dbs_audio_script.md",
       "audioPath": "audio/generated/pd_motor_decoding_personalized_dbs.wav",
-      "scriptPath": "audio_scripts/pd_motor_decoding_personalized_dbs_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/pd_somato_cognitive_action_network_disorder.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/pd_somato_cognitive_action_network_disorder_audio_script.md",
       "audioPath": "audio/generated/pd_somato_cognitive_action_network_disorder.wav",
-      "scriptPath": "audio_scripts/pd_somato_cognitive_action_network_disorder_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/personalized_fmri_guided_tms_ptsd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/personalized_fmri_guided_tms_ptsd_audio_script.md",
       "audioPath": "audio/generated/personalized_fmri_guided_tms_ptsd.wav",
-      "scriptPath": "audio_scripts/personalized_fmri_guided_tms_ptsd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/portable_hd_tacs_mdd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/portable_hd_tacs_mdd_audio_script.md",
       "audioPath": "audio/generated/portable_hd_tacs_mdd.wav",
-      "scriptPath": "audio_scripts/portable_hd_tacs_mdd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/precision_dbs_neuroimaging_humans.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/precision_dbs_neuroimaging_humans_audio_script.md",
       "audioPath": "audio/generated/precision_dbs_neuroimaging_humans.wav",
-      "scriptPath": "audio_scripts/precision_dbs_neuroimaging_humans_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/precision_network_modeling_tms.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/precision_network_modeling_tms_audio_script.md",
       "audioPath": "audio/generated/precision_network_modeling_tms.wav",
-      "scriptPath": "audio_scripts/precision_network_modeling_tms_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/precision_phase_targeting_closed_loop_tms_eeg.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/precision_phase_targeting_closed_loop_tms_eeg_audio_script.md",
       "audioPath": "audio/generated/precision_phase_targeting_closed_loop_tms_eeg.wav",
-      "scriptPath": "audio_scripts/precision_phase_targeting_closed_loop_tms_eeg_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/predicting_monopolar_lfp_from_bipolar_recordings.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/predicting_monopolar_lfp_from_bipolar_recordings_audio_script.md",
       "audioPath": "audio/generated/predicting_monopolar_lfp_from_bipolar_recordings.wav",
-      "scriptPath": "audio_scripts/predicting_monopolar_lfp_from_bipolar_recordings_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/predicting_pd_neuromod_generative_virtual_brain.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/predicting_pd_neuromod_generative_virtual_brain_audio_script.md",
       "audioPath": "audio/generated/predicting_pd_neuromod_generative_virtual_brain.wav",
-      "scriptPath": "audio_scripts/predicting_pd_neuromod_generative_virtual_brain_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/predicting_pd_neuromod_virtual_brain.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/predicting_pd_neuromod_virtual_brain_audio_script.md",
       "audioPath": "audio/generated/predicting_pd_neuromod_virtual_brain.wav",
-      "scriptPath": "audio_scripts/predicting_pd_neuromod_virtual_brain_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/preictal_ttis_pediatric_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/preictal_ttis_pediatric_epilepsy_audio_script.md",
       "audioPath": "audio/generated/preictal_ttis_pediatric_epilepsy.wav",
-      "scriptPath": "audio_scripts/preictal_ttis_pediatric_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/ptsd_scg_uf_dbs_long_term.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/ptsd_scg_uf_dbs_long_term_audio_script.md",
       "audioPath": "audio/generated/ptsd_scg_uf_dbs_long_term.wav",
-      "scriptPath": "audio_scripts/ptsd_scg_uf_dbs_long_term_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/remote_magnetomechanical_parkinsonism.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/remote_magnetomechanical_parkinsonism_audio_script.md",
       "audioPath": "audio/generated/remote_magnetomechanical_parkinsonism.wav",
-      "scriptPath": "audio_scripts/remote_magnetomechanical_parkinsonism_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "paper_notes/rns_pas_three_year_epilepsy.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/rns_pas_three_year_epilepsy_audio_script.md",
+      "audioPath": "audio/generated/rns_pas_three_year_epilepsy.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/rtms_concussion_persisting_symptoms.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/rtms_concussion_persisting_symptoms_audio_script.md",
       "audioPath": "audio/generated/rtms_concussion_persisting_symptoms.wav",
-      "scriptPath": "audio_scripts/rtms_concussion_persisting_symptoms_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/scc_ultrasound_depression.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/scc_ultrasound_depression_audio_script.md",
       "audioPath": "audio/generated/scc_ultrasound_depression.wav",
-      "scriptPath": "audio_scripts/scc_ultrasound_depression_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/self_adaptive_ultrasound_patch.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/self_adaptive_ultrasound_patch_audio_script.md",
       "audioPath": "audio/generated/self_adaptive_ultrasound_patch.wav",
-      "scriptPath": "audio_scripts/self_adaptive_ultrasound_patch_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/sgc_normative_connectivity_tms_response.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/sgc_normative_connectivity_tms_response_audio_script.md",
       "audioPath": "audio/generated/sgc_normative_connectivity_tms_response.wav",
-      "scriptPath": "audio_scripts/sgc_normative_connectivity_tms_response_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/spatially_diffuse_connectome_control.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/spatially_diffuse_connectome_control_audio_script.md",
       "audioPath": "audio/generated/spatially_diffuse_connectome_control.wav",
-      "scriptPath": "audio_scripts/spatially_diffuse_connectome_control_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/state_transitions_brain_stimulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/state_transitions_brain_stimulation_audio_script.md",
       "audioPath": "audio/generated/state_transitions_brain_stimulation.wav",
-      "scriptPath": "audio_scripts/state_transitions_brain_stimulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/stimvision_dbs_programming.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/stimvision_dbs_programming_audio_script.md",
       "audioPath": "audio/generated/stimvision_dbs_programming.wav",
-      "scriptPath": "audio_scripts/stimvision_dbs_programming_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/stn_dbs_pathological_dynamics_gait.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/stn_dbs_pathological_dynamics_gait_audio_script.md",
       "audioPath": "audio/generated/stn_dbs_pathological_dynamics_gait.wav",
-      "scriptPath": "audio_scripts/stn_dbs_pathological_dynamics_gait_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/stop_signal_evidence_accumulation_substance_use.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/stop_signal_evidence_accumulation_substance_use_audio_script.md",
       "audioPath": "audio/generated/stop_signal_evidence_accumulation_substance_use.wav",
-      "scriptPath": "audio_scripts/stop_signal_evidence_accumulation_substance_use_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/structural_functional_connectivity_memory_stimulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/structural_functional_connectivity_memory_stimulation_audio_script.md",
       "audioPath": "audio/generated/structural_functional_connectivity_memory_stimulation.wav",
-      "scriptPath": "audio_scripts/structural_functional_connectivity_memory_stimulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tao_tms_naturalistic_trd.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tao_tms_naturalistic_trd_audio_script.md",
       "audioPath": "audio/generated/tao_tms_naturalistic_trd.wav",
-      "scriptPath": "audio_scripts/tao_tms_naturalistic_trd_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tdcs_early_alzheimers_fmri_meg.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tdcs_early_alzheimers_fmri_meg_audio_script.md",
       "audioPath": "audio/generated/tdcs_early_alzheimers_fmri_meg.wav",
-      "scriptPath": "audio_scripts/tdcs_early_alzheimers_fmri_meg_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/temporal_basis_closed_loop_stimulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/temporal_basis_closed_loop_stimulation_audio_script.md",
       "audioPath": "audio/generated/temporal_basis_closed_loop_stimulation.wav",
-      "scriptPath": "audio_scripts/temporal_basis_closed_loop_stimulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/temporal_interference_mdd_lingual_biomarker.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/temporal_interference_mdd_lingual_biomarker_audio_script.md",
       "audioPath": "audio/generated/temporal_interference_mdd_lingual_biomarker.wav",
-      "scriptPath": "audio_scripts/temporal_interference_mdd_lingual_biomarker_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tfus_bidirectional_corticothalamic_modulation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tfus_bidirectional_corticothalamic_modulation_audio_script.md",
       "audioPath": "audio/generated/tfus_bidirectional_corticothalamic_modulation.wav",
-      "scriptPath": "audio_scripts/tfus_bidirectional_corticothalamic_modulation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tfus_pd_oscillation_suppression.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tfus_pd_oscillation_suppression_audio_script.md",
       "audioPath": "audio/generated/tfus_pd_oscillation_suppression.wav",
-      "scriptPath": "audio_scripts/tfus_pd_oscillation_suppression_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tfus_teas_localizable_activation.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tfus_teas_localizable_activation_audio_script.md",
       "audioPath": "audio/generated/tfus_teas_localizable_activation.wav",
-      "scriptPath": "audio_scripts/tfus_teas_localizable_activation_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/thalamocortical_network_dynamics_focal_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/thalamocortical_network_dynamics_focal_epilepsy_audio_script.md",
       "audioPath": "audio/generated/thalamocortical_network_dynamics_focal_epilepsy.wav",
-      "scriptPath": "audio_scripts/thalamocortical_network_dynamics_focal_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/ti_stn_pd_pilot.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/ti_stn_pd_pilot_audio_script.md",
       "audioPath": "audio/generated/ti_stn_pd_pilot.wav",
-      "scriptPath": "audio_scripts/ti_stn_pd_pilot_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/time_varying_directed_interactions_brain_networks.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/time_varying_directed_interactions_brain_networks_audio_script.md",
       "audioPath": "audio/generated/time_varying_directed_interactions_brain_networks.wav",
-      "scriptPath": "audio_scripts/time_varying_directed_interactions_brain_networks_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/tunes_dbs_contact_optimization.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/tunes_dbs_contact_optimization_audio_script.md",
       "audioPath": "audio/generated/tunes_dbs_contact_optimization.wav",
-      "scriptPath": "audio_scripts/tunes_dbs_contact_optimization_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/two_array_temporal_interference.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/two_array_temporal_interference_audio_script.md",
       "audioPath": "audio/generated/two_array_temporal_interference.wav",
-      "scriptPath": "audio_scripts/two_array_temporal_interference_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/visual_memory_network_targeting.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/visual_memory_network_targeting_audio_script.md",
       "audioPath": "audio/generated/visual_memory_network_targeting.wav",
-      "scriptPath": "audio_scripts/visual_memory_network_targeting_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/vns_network_perturbations_pediatric_epilepsy.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/vns_network_perturbations_pediatric_epilepsy_audio_script.md",
       "audioPath": "audio/generated/vns_network_perturbations_pediatric_epilepsy.wav",
-      "scriptPath": "audio_scripts/vns_network_perturbations_pediatric_epilepsy_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/walk_sum_frequency_communication.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/walk_sum_frequency_communication_audio_script.md",
       "audioPath": "audio/generated/walk_sum_frequency_communication.wav",
-      "scriptPath": "audio_scripts/walk_sum_frequency_communication_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     },
     "paper_notes/white_matter_pathways_dlpfc_tms_depression.md": {
-      "label": "Listen to note",
+      "label": "listen",
+      "scriptPath": "audio_scripts/white_matter_pathways_dlpfc_tms_depression_audio_script.md",
       "audioPath": "audio/generated/white_matter_pathways_dlpfc_tms_depression.wav",
-      "scriptPath": "audio_scripts/white_matter_pathways_dlpfc_tms_depression_audio_script.md"
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
+    },
+    "related_work/closed_loop_and_personalized_targeting.md": {
+      "label": "listen",
+      "scriptPath": "audio_scripts/closed_loop_and_personalized_targeting_audio_script.md",
+      "audioPath": "audio/generated/closed_loop_and_personalized_targeting.wav",
+      "voice": "en_US-hfc_male-medium",
+      "rate": 0.95
     }
   }
 }
