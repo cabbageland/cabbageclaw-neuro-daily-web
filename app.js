@@ -34,6 +34,29 @@ function stripLeadingMarkdownTitle(text = '') {
   return text.replace(/^#\s+.+?(\n+|$)/, '');
 }
 
+function normalizeInternalPath(path = '') {
+  if (!path || /^(https?:|mailto:|tel:|#)/i.test(path)) return path;
+  if (/\.(md|json|mp3|wav|m4a|ogg|html?)$/i.test(path)) return path;
+  if (/^(paper_notes|daily_papers|related_notes)\//i.test(path)) return `${path}.md`;
+  return path;
+}
+
+function normalizeInternalLinks(root) {
+  root.querySelectorAll('a[href]').forEach((link) => {
+    const href = link.getAttribute('href') || '';
+    const normalized = normalizeInternalPath(href);
+    if (normalized !== href) {
+      link.setAttribute('href', normalized);
+    }
+    if (/^(paper_notes|daily_papers|related_notes)\/.+/i.test(normalized)) {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openDetailByPath(normalized);
+      });
+    }
+  });
+}
+
 function renderMarkdown(text = '') {
   const marked = getMarked();
   marked.setOptions({
@@ -42,7 +65,10 @@ function renderMarkdown(text = '') {
     headerIds: false,
     mangle: false
   });
-  return marked.parse(stripLeadingMarkdownTitle(text));
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = marked.parse(stripLeadingMarkdownTitle(text));
+  normalizeInternalLinks(wrapper);
+  return wrapper.innerHTML;
 }
 
 function makeClickableCard(node, path) {
@@ -367,7 +393,7 @@ function setupTabs() {
 function handleRoute() {
   const hash = window.location.hash || '';
   if (!hash.startsWith(HASH_ROUTE_PREFIX)) return;
-  const path = decodeURIComponent(hash.slice(HASH_ROUTE_PREFIX.length));
+  const path = normalizeInternalPath(decodeURIComponent(hash.slice(HASH_ROUTE_PREFIX.length)));
   if (!path) return;
   openDetailByPath(path, { skipRouteUpdate: true });
 }
