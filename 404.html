@@ -21,6 +21,9 @@
       var repoBase = '/cabbageclaw-neuro-daily-web';
       var suffix = path.startsWith(repoBase) ? path.slice(repoBase.length) : path;
       var normalized = suffix.replace(/^\/+/, '');
+      if (normalized && !/\.md$/i.test(normalized) && !/^data\//i.test(normalized) && !/^audio\//i.test(normalized)) {
+        normalized += '.md';
+      }
       var target = repoBase + '/#/' + normalized + window.location.search + window.location.hash;
       window.location.replace(target);
     })();
