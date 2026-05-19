@@ -143,11 +143,11 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
   font-weight: 800;
   margin-bottom: 10px;
 }
-.hero h2 { margin:0 0 12px; font-size: clamp(40px, 5.8vw, 68px); line-height: .95; letter-spacing: -0.04em; }
+.hero h2 { margin:0 0 12px; font-size: clamp(34px, 4.6vw, 58px); line-height: .98; letter-spacing: -0.04em; }
 .hero-title-link { color: var(--text); text-decoration: none; }
 .hero-title-link:hover { text-decoration: underline; }
 .hero p { color: var(--muted); }
-.hero .big { font-size: clamp(17px, 1.65vw, 21px); line-height: 1.42; color: var(--text); max-width: 980px; margin: 0 0 18px; }
+.hero .big { font-size: clamp(16px, 1.35vw, 19px); line-height: 1.42; color: var(--text); max-width: 980px; margin: 0 0 18px; }
 .hero-picks {
   width: 100%;
   max-width: 980px;
@@ -172,8 +172,8 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 }
 .hero-picks-list li {
   color: #eef6ff;
-  font-size: 21px;
-  line-height: 1.35;
+  font-size: clamp(17px, 1.5vw, 19px);
+  line-height: 1.38;
   font-weight: 650;
 }
 .hero-scroll {
@@ -207,19 +207,19 @@ h1 { margin: 0; font-size: clamp(28px, 4.9vw, 60px); line-height: 1; letter-spac
 .grid.two { display:grid; grid-template-columns: minmax(0, 1.38fr) minmax(320px, .82fr); gap:16px; }
 .panel { padding:24px; }
 .panel-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; margin-bottom: 14px; }
-.panel-head h2 { margin:0; font-size: 24px; line-height: 1.05; }
+.panel-head h2 { margin:0; font-size: 22px; line-height: 1.08; }
 .muted { color: var(--muted); }
 .stack { display:flex; flex-direction:column; gap:12px; }
-.card-list { display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:16px; }
+.card-list { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:16px; }
 .card { padding:20px; box-shadow: var(--shadow); }
-.card h3 { margin: 12px 0 10px; font-size: 22px; line-height: 1.15; }
-.card p { color: var(--muted); margin: 0 0 12px; font-size: 17px; line-height: 1.55; }
+.card h3 { margin: 12px 0 10px; font-size: 20px; line-height: 1.18; }
+.card p { color: var(--muted); margin: 0 0 12px; font-size: 16px; line-height: 1.55; }
 .card-meta-row { display:flex; flex-wrap:wrap; gap:8px; }
 .chip { display:inline-flex; align-items:center; padding:7px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; background: rgba(255,255,255,.06); color: var(--text); text-decoration:none; }
 .chip.verdict { background: rgba(128,242,214,.12); color: var(--accent); }
 .chip.link { background: rgba(137,183,255,.12); color: #bcd5ff; }
-.theme { color: var(--text) !important; font-weight: 700; font-size: 21px; line-height: 1.3; }
-details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-weight: 700; }
+.theme { color: var(--text) !important; font-weight: 700; font-size: clamp(18px, 1.6vw, 20px); line-height: 1.3; }
+details summary { cursor:pointer; color: var(--accent-2); font-size: 16px; font-weight: 700; }
 .link-row { display:flex; flex-wrap:wrap; gap:14px; margin-top: 14px; }
 .link-row a, .link-row button, .related-card a, .card-title-link { color: var(--accent-2); text-decoration:none; font-weight:700; }
 .link-row a, .link-row button {
@@ -244,12 +244,12 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
 
 #latestDigest h3 {
   margin: 0 0 14px;
-  font-size: clamp(28px, 3.4vw, 36px);
-  line-height: 1.05;
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.07;
 }
 
 #latestDigest p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.58;
   color: #d6deea;
 }
@@ -291,8 +291,8 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
 
 .detail-header h2 {
   margin: 0;
-  font-size: clamp(30px, 4vw, 48px);
-  line-height: 1.02;
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.04;
   letter-spacing: -0.03em;
 }
 
@@ -343,8 +343,8 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
 .markdown-body p,
 .markdown-body li {
   color: #d8e6f5;
-  font-size: 18px;
-  line-height: 1.72;
+  font-size: 17px;
+  line-height: 1.68;
 }
 
 .markdown-body p,
@@ -425,7 +425,7 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
 
 @media (max-width: 640px) {
   .app-shell {
-    padding: 14px 10px 40px;
+    padding: 12px 10px 34px;
   }
   .page-stamp {
     top: -6px;
@@ -461,7 +461,7 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
     overflow-wrap: anywhere;
   }
   h1 {
-    font-size: clamp(24px, 8.2vw, 34px);
+    font-size: clamp(22px, 7vw, 30px);
   }
   .title-gradient {
     white-space: normal;
@@ -471,15 +471,15 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
     padding: 16px 14px;
   }
   .hero h2 {
-    font-size: clamp(28px, 8vw, 38px);
-    line-height: 1;
+    font-size: clamp(24px, 6.8vw, 32px);
+    line-height: 1.02;
   }
   .hero .big,
   .hero-picks-list li,
   #latestDigest p,
   .card p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.48;
   }
   .hero-picks-list {
     padding-left: 20px;
@@ -523,20 +523,26 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 17px; font-
   }
   .card h3,
   #latestDigest h3 {
-    font-size: 24px;
-    line-height: 1.12;
+    font-size: 21px;
+    line-height: 1.14;
   }
   .panel-head {
     flex-direction: column;
     align-items: flex-start;
   }
   .detail-header h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
+  .detail-meta {
+    font-size: 14px;
+  }
+  .markdown-body h1 { font-size: 28px; }
+  .markdown-body h2 { font-size: 23px; }
+  .markdown-body h3 { font-size: 19px; }
   .markdown-body p,
   .markdown-body li {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.58;
   }
   .link-row {
     gap: 10px;
