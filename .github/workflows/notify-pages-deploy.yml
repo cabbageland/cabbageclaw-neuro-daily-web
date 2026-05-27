@@ -1,0 +1,78 @@
+name: Notify on Pages deploy
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+
+jobs:
+  notify-slack:
+    if: >-
+      ${{
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event != 'workflow_run'
+      }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post deploy notification to Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SITE_URL: https://cabbageland.github.io/cabbageclaw-neuro-daily-web/
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.event.workflow_run.head_sha }}
+          REPO: ${{ github.repository }}
+          ACTOR: ${{ github.event.workflow_run.actor.login }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "SLACK_WEBHOOK_URL secret is not set."
+            exit 1
+          fi
+
+          short_sha="${SHA::7}"
+          payload=$(cat <<JSON
+          {
+            "text": "Neuro Daily updated",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": ":brain: *Neuro Daily updated*"
+                }
+              },
+              {
+                "type": "section",
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Repo*\n${REPO}"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Branch*\n${BRANCH}"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Commit*\n<${COMMIT_URL}|${short_sha}>"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Triggered by*\n${ACTOR}"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "<${SITE_URL}|Open live site>  •  <${RUN_URL}|View deploy run>"
+                }
+              }
+            ]
+          }
+          JSON
+          )
+
+          curl -X POST -H 'Content-type: application/json' --data "$payload" "$SLACK_WEBHOOK_URL"
