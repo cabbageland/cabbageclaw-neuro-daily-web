@@ -1,1 +1,3 @@
 __pycache__/
+# Subscriber lists are private local data, never website assets.
+recipients*.csv
