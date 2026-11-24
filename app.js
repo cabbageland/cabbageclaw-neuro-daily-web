@@ -35,9 +35,22 @@ function stripLeadingMarkdownTitle(text = '') {
 }
 
 function normalizeInternalPath(path = '') {
-  if (!path || /^(https?:|mailto:|tel:|#)/i.test(path)) return path;
-  if (/\.(md|json|mp3|wav|m4a|ogg|html?)$/i.test(path)) return path;
-  if (/^(paper_notes|daily_papers|related_notes)\//i.test(path)) return `${path}.md`;
+  if (!path || /^(mailto:|tel:|#)/i.test(path)) return path;
+  let candidate = path;
+  if (/^https?:/i.test(path)) {
+    try {
+      const url = new URL(path);
+      const site = new URL('https://cabbageland.github.io/cabbageclaw-neuro-daily-web/');
+      if (url.origin !== site.origin || !url.pathname.startsWith(site.pathname)) return path;
+      candidate = url.hash.startsWith('#/') ? url.hash.slice(2) : url.pathname.slice(site.pathname.length);
+    } catch {
+      return path;
+    }
+  }
+  candidate = candidate.replace(/^(?:\.{1,2}\/)+/, '');
+  if (/^(paper_notes|daily_papers|related_work|related_notes)\/[A-Za-z0-9_-]+(?:\.md)?$/i.test(candidate)) {
+    return candidate.endsWith('.md') ? candidate : `${candidate}.md`;
+  }
   return path;
 }
 
@@ -45,14 +58,9 @@ function normalizeInternalLinks(root) {
   root.querySelectorAll('a[href]').forEach((link) => {
     const href = link.getAttribute('href') || '';
     const normalized = normalizeInternalPath(href);
-    if (normalized !== href) {
-      link.setAttribute('href', normalized);
-    }
-    if (/^(paper_notes|daily_papers|related_notes)\/.+/i.test(normalized)) {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        openDetailByPath(normalized);
-      });
+    if (/^(paper_notes|daily_papers|related_work|related_notes)\/[A-Za-z0-9_-]+\.md$/i.test(normalized)) {
+      // Hash routes survive renderMarkdown's innerHTML serialization; listeners do not.
+      link.setAttribute('href', `${HASH_ROUTE_PREFIX}${normalized}`);
     }
   });
 }
