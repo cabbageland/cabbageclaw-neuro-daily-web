@@ -367,6 +367,13 @@ details summary { cursor:pointer; color: var(--accent-2); font-size: 16px; font-
 
 .markdown-body a {
   color: var(--accent-2);
+  overflow-wrap: anywhere;
+}
+
+.markdown-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .markdown-body code {
